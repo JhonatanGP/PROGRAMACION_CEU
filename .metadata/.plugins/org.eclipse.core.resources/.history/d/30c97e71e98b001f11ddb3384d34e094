@@ -19,7 +19,7 @@ public class Ej01 {
 		Integer m = x * y;
 		Integer d = y / x;
 		
-		System.out.println("La suma de " + x + " + " + y + " = " + s + ".");
+		System.out.println("La suma de " + x + " + " + y + " = " + s + ".")
 		System.out.println("La resta " + y + " - " + x + " = " + r + ".");
 		System.out.println("La multiplicación de " + x + " x " + y + " = " + m + "." );
 		System.out.println("La división es " + x + " : " + y + " = " + d + ".");
