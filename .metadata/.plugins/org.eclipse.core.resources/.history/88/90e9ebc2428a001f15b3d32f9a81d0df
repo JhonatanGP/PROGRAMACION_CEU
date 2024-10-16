@@ -1,0 +1,16 @@
+package ej03PrácticosRepaso;
+
+public class Ej06 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Integer suma = 0;
+		for (int i = 3 ; i <30; i+=3 ) {
+			suma += i;
+			System.out.print(suma + "+");
+			
+		}
+		
+	}
+
+}

@@ -1,0 +1,34 @@
+package ej03PrácticosRepaso;
+
+import java.util.Scanner;
+
+public class Ej07 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		Boolean v = true;
+		Integer suma = 0;
+		do {
+			System.out.println("Ingresa un número y averigua su suma consecutiva");
+			Integer n = sc.nextInt();
+			
+			for (int i = 1 ; i <= 10; i ++) {
+				suma += n;	
+				if(i<10) {
+					System.out.print(n + " + ");
+				}
+				else {
+					System.out.print(suma + " = " );
+				}
+			}
+			System.out.print(suma);
+			System.out.println();
+		}
+		while(v);
+			
+		
+
+	}
+
+}

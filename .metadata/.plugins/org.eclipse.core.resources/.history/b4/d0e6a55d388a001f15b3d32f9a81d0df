@@ -1,0 +1,28 @@
+package ej03PrácticosRepaso;
+
+import java.util.Scanner;
+
+public class Ej04 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Escriba su precio:");
+		Float p = sc.nextFloat();
+		System.out.println("Escriba las unidades:");
+		Float u = sc.nextFloat();
+		
+		Float st = p * u;
+		System.out.println("Subtotal = " + p + " X " + u + " = " + st + " euros.");
+		
+		if (st > 100) {
+			Float d = st * 0.60f;
+			System.out.println("Descuento = 40% de" + st + " = " + d + " euros.");
+		}
+		else if(st <= 25) {
+			Float d = st * 0.80f;
+			System.out.println("Descuento = 20% de\" + st + \" = \" + d + \" euros.");
+		}
+	}
+
+}

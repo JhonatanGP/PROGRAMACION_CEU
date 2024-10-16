@@ -1,0 +1,14 @@
+package ej03PrácticosRepaso;
+
+public class Ej05 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Integer cont = 0;
+		for (int i = 0 ; i <=21; i++ ) {
+			cont ++;
+			System.out.print("_");
+		}
+	}
+
+}

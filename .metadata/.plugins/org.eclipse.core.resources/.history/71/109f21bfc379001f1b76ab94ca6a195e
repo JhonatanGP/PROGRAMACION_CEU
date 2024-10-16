@@ -1,0 +1,31 @@
+package tema02;
+
+import java.util.Scanner;
+
+public class Ej01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("¿En qué año naciste?");
+		Integer año = sc.nextInt();
+		String mensaje;
+		
+		if (año >= 1900) { 
+			mensaje = "Pertenece a la Generación Perdida ";
+		}
+		
+		else if (año >= 1900 && año <= 1927) {
+			mensaje = "Pertenece a la Generación Grandiosa/GM ";
+		}
+		else if (año >= 1900 && año <= 1927) {
+			mensaje = "Pertenece a la Generación Grandiosa/GM ";
+		}
+		else if (año >= 1900 && año <= 1927) {
+			mensaje = "Pertenece a la Generación Grandiosa/GM ";
+		}
+			
+		
+	}
+
+}

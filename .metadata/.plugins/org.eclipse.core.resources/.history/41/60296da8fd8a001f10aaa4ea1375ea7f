@@ -1,0 +1,44 @@
+package ej03PrácticosRepaso;
+
+import java.util.Scanner;
+
+public class Ej07 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		Boolean v = true;
+		Integer suma = 0;
+		Integer total = 0;
+		do {
+			suma = 0;
+			total = 0;
+			System.out.println("Ingresa un número y averigua su suma consecutiva");
+			Integer n = sc.nextInt();
+
+			if (n >= 1 && n <= 10) {
+				v = true;
+				for (int i = 1; i <= 10; i++) {
+					suma += n;
+					total = total + suma;
+
+					if (i < 10) {
+						System.out.print(suma + " + ");
+					} else {
+						System.out.print(suma + " = " + total);
+
+					}
+				}
+
+			}
+			else {
+				System.out.println("El número debe ser mayor que 0 y menor o igual a 10");
+			}
+
+			// System.out.print(total);
+			System.out.println();
+		} while (v);
+
+	}
+
+}
