@@ -1,0 +1,42 @@
+package ej03PrácticosRepaso;
+
+import java.util.Scanner;
+
+public class Ej11 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		Boolean v = true;
+
+		do {
+			System.out.println("Ingrese un número");
+			Integer n1 = sc.nextInt();
+
+			System.out.println("Ingrese otro número");
+			Integer n2 = sc.nextInt();
+
+			System.out.println("**** MENÚ ****\n\t1. Sumar\n\t2. Restar\n\t3. Multiplicar\n\t4. Dividir\n\t0. Salir");
+			Integer n3 = sc.nextInt();
+
+			if (n3 == 0) {
+				System.out.println("Salir");
+				v = false;
+
+			} else if (n3 == 1) {
+				System.out.println("SUMA");
+				Integer suma = n1 + n2;
+				System.out.println("Resultado: " + n1 + " + " + n2 + " = " + suma);
+				v = false;
+			} else {
+				System.out.println("No lo he entendido.");
+
+			}
+
+		} while (v);
+
+		sc.close();
+
+	}
+
+}

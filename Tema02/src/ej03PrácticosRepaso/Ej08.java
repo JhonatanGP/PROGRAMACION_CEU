@@ -11,21 +11,23 @@ public class Ej08 {
 		do {
 			System.out.println("Ingresa un texto:");
 			String t = sc.nextLine();
-			
-			//Primero hola
+
+			// Primero hola
 			Integer primero = t.indexOf(" ");// busca el primer espacio
 			String p1 = t.substring(0, primero + 1);
-			
-			//Segundo hastaluego
-			Integer segundo = t.lastIndexOf(" ");// busca el primer espacio
-			String p2 = t.substring( segundo, t.length()); //Probar +1 luego 
-			
-			//Mensaje. Para mensaje no hace falta Integer
-			String mensaje 
-			
-			
-			if (t.startsWith("hola") && t.endsWith("hastaluego")) {
 
+			// Segundo hastaluego
+			Integer segundo = t.lastIndexOf(" ");// busca el primer espacio
+			String p2 = t.substring(segundo, t.length()); // Probar +1 luego
+
+			// Mensaje. Para mensaje no hace falta Integer
+			String mensaje = t.substring(primero, segundo);
+			// System.out.println(mensaje); el syso lo escribo para probar que es lo que
+			// coge.
+
+			if (t.startsWith("hola") && t.endsWith("hastaluego")) {
+				System.out.println("Lo he entendido. Mensaje: " + mensaje + ".");
+				v = false; // esto es para salir directamente y no pregunte de nuevo: Ingrese un texto.
 			} else {
 				System.out.println("No lo he entendido.");
 			}

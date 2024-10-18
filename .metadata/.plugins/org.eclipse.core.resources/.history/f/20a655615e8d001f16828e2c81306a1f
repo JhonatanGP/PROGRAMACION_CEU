@@ -1,0 +1,32 @@
+package ej03PrácticosRepaso;
+
+import java.util.Scanner;
+
+public class Ej10 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		Boolean v = true;
+		String mensaje ="";
+		do {
+			System.out.println("Ingresa una dirección de página como la siguiente: http://www.google.com o https://w3w.blasblau.es");
+			String p = sc.nextLine();
+
+			if (p.contains("http://") || p.contains("https://") ) {
+				mensaje = p.substring(0,p.lastIndexOf("/"));
+				System.out.println("Lo he entendido. Mensaje: " + mensaje);
+				
+
+			}else {
+				System.out.println("No lo he entendido.");
+				v = true;
+			}
+
+		} while (v);
+
+		sc.close();
+
+	}
+
+}
