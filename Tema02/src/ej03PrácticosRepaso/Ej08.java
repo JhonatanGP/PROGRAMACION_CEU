@@ -33,6 +33,7 @@ public class Ej08 {
 			}
 
 		} while (v);
+		sc.close();
 
 	}
 

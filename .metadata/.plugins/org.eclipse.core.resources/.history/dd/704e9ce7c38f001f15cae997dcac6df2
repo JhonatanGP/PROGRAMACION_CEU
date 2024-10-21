@@ -1,0 +1,35 @@
+package ej03PrácticosRepaso;
+
+import java.util.Scanner;
+
+public class Ej17 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		Boolean v = true;
+		
+		Integer n1 = 0;
+		Integer n2 = 1;
+		
+		do {
+			System.out.print("Escriba un número: ");
+			Integer n = sc.nextInt();
+			if(n <= 2) {
+				System.out.println("Número no válido. Debe ser mayor o igual que 2.");
+				v = true;
+			}else {
+				for (int i = 0; i < n; i++) {
+					
+					System.out.print(i + ",");
+				} v = false;
+			}
+			
+		}while (v);
+
+		
+
+		sc.close();
+	}
+}

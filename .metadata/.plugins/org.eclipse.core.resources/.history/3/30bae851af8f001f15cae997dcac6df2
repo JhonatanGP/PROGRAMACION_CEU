@@ -1,0 +1,22 @@
+package ej03PrácticosRepaso;
+
+import java.util.Scanner;
+
+public class Ej13 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		Boolean v = true;
+		
+		do {
+			System.out.println("Ingrese una frase: ");
+			String p1 = sc.nextLine();
+			
+
+		} while (v);
+		
+		sc.close();
+	}
+	
+}

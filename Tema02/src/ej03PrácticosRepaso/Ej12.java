@@ -33,12 +33,10 @@ public class Ej12 {
 					System.out.print("|");
 					for (int y = 0; y < n; y++) {
 						System.out.print("__|");
-						
 					}
 				}
 				v = false;
 			}
-
 		} while (v);
 
 		sc.close();

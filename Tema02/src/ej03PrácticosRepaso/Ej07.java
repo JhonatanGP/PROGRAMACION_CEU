@@ -36,6 +36,7 @@ public class Ej07 {
 			System.out.println();
 
 		} while (v);
+		sc.close();
 	}
 
 }

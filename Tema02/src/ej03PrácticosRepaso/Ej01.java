@@ -17,6 +17,8 @@ public class Ej01 {
 		Integer n = AÑO - a;
 		
 		System.out.println("Hola " + nombre + ", en el año 2030 tendrás " + n + " años.");
+		sc.close();
+		
 	}
 
 }
