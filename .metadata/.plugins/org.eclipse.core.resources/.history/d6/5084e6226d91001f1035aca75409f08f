@@ -2,7 +2,7 @@ package ej03PrácticosRepaso;
 
 import java.util.Scanner;
 
-public class Ej17 {
+public class Ej18 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -20,7 +20,7 @@ public class Ej17 {
 				System.out.println("Número no válido. Debe ser mayor o igual que 2.");
 				v = true;
 			}else {
-				System.out.print("La serie de Fibonacci de " + n + " es: " + n1 + "," + n2 + ",");
+				System.out.print(n1 + "," + n2 + ",");
 				for (int i = 1; i <= n; i++) {
 					s = n1 + n2;
 					if(i == n) {
