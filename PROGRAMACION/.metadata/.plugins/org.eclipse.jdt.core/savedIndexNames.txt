@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\jguzman5292\Documents\PROGRAMACION_CEU\PROGRAMACION\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+1726634238.index
+2834897946.index

@@ -1,0 +1,25 @@
+package tema01.ej01Repaso;
+
+import java.util.Scanner;
+
+public class ej01 {
+	
+	public static final Float PI = 3.1416F;
+
+	
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Indique el radio del círculo");
+		Float radio = sc.nextFloat();
+		
+		Float  circunf = 2 * PI * radio ;
+	 	Float  area = PI * (radio * radio);
+	 	
+	 	System.out.println("La circunferencia es " + circunf + " y el área es " + area + ".");
+	 	
+	 	sc.close();
+				
+	}
+
+}
