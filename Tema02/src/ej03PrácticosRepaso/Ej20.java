@@ -2,7 +2,7 @@ package ej03PrácticosRepaso;
 
 import java.util.Scanner;
 
-public class Ej19 {
+public class Ej20 {
 
 	public static void main(String[] args) {
 
