@@ -1,0 +1,17 @@
+package Tema02.ej03PrácticosRepaso;
+
+import java.util.Scanner;
+
+public class Ej23 {
+
+	public static void main(String[] args) {
+		
+		for(int i=1; i<=5; i++) {
+			System.out.println();
+		for(int y=1; y<=5;y++) {
+			System.out.print(" " + y + " ");
+		}
+		
+	}
+	}
+}

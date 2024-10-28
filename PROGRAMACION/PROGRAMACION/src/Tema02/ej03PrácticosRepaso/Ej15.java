@@ -9,7 +9,7 @@ public class Ej15 {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		Random r = new Random();
-		Integer na = r.nextInt(0, 9);
+		Integer na = r.nextInt(0, 10);
 		Boolean v = true;
 		Integer p = 10;
 

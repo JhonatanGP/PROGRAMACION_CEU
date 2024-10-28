@@ -1,0 +1,19 @@
+package Tema02.ej03PrácticosRepaso;
+
+import java.util.Scanner;
+
+public class Ej25 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Piedra, papel, tijera... 1, 2 , 3 ... ya!!");
+		String p = sc.nextLine().toLowerCase();
+		
+		if (p.equals("piedra")) {
+			System.out.println("t");
+		}
+		
+
+		sc.close();
+	}
+}

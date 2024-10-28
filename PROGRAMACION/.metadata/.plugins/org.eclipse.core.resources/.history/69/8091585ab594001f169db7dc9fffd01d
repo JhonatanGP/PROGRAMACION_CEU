@@ -1,0 +1,32 @@
+package Tema02.ej03PrácticosRepaso;
+
+import java.util.Scanner;
+
+public class Ej24 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Boolean v = true;
+		Integer s = 0;
+
+		do {
+			System.out.println("Ingrese un número:");
+			Integer n = sc.nextInt();
+			if (n == 0) {
+				System.out.println("El número no puede ser 0");
+			} else {
+				for (int i = 0; i <= n; i++) {
+					if (i % 2 != 0) {
+						System.out.print(i + " + ");
+						s += i;
+					} 
+				}
+				System.out.println("=" + s + ".");
+				v = false;
+			}
+
+		} while (v);
+
+		sc.close();
+	}
+}

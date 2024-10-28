@@ -1,0 +1,28 @@
+package Tema02.ej04Avanzado;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Ej01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
+
+        // Pedimos al usuario cuántas veces desea lanzar el dado
+        System.out.print("¿Cuántas veces quieres lanzar el dado? ");
+        int n = scanner.nextInt();
+
+        System.out.println("\nResultados de los lanzamientos:");
+        for (int i = 1; i <= n; i++) {
+            int resultado = random.nextInt(6) + 1;  // Genera un número entre 1 y 6
+            System.out.println("Lanzamiento " + i + ": " + resultado);
+        }
+
+        System.out.println("\n¡Fin del programa!");
+        scanner.close();		
+		
+	}
+
+}

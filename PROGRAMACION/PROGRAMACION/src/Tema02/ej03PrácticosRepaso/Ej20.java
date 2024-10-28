@@ -4,13 +4,10 @@ public class Ej20 {
 
 	public static void main(String[] args) {
 
-		Integer t = 5;
-
-		for (int i = 0; i < t; i++) {
-			for (int j = 0; j < t; j++) {
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j < 5; j++) {
 				if (i == j) {
 					System.out.print("* ");
-
 				} else {
 					System.out.print("- ");
 				}
