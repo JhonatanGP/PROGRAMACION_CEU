@@ -19,6 +19,7 @@ public class Ej25 {
 			if(!p.equals("piedra") && !p.equals("papel") && !p.equals("tijera")) {
 				System.out.println("Opción no válida. Debe ser piedra, papel o tijera.");
 			}
+			
 			if (p.equals("piedra")) {
 				System.out.println("1 vs " + d);
 			}else if (p.equals("papel")) {

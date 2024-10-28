@@ -1,0 +1,64 @@
+package Tema02.ej04Avanzado;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Ej01 {
+	
+    public static void main(String[] args) {
+    	Scanner scanner = new Scanner(System.in);
+		Random random = new Random();
+		String[] juego = {"piedra", "papel", "papel"};
+	
+		int puntacion = 0;
+		Boolean v = true;
+		while(v) {
+			System.out.println("Piedra, papel, tijera… un, dos, tres… ya!!");
+			//MENU 
+			System.out.println("\t Piedra");//1
+			System.out.println("\t Papel");//2
+			System.out.println("\t Tijera");//3
+			String respuesta = scanner.nextLine().toLowerCase().trim();
+			
+				 int indiceAleatorio = random.nextInt(3);
+				 String palabra = juego[indiceAleatorio]; 
+				 System.out.println(palabra);
+				 
+					if(respuesta.equals(palabra)){
+							System.out.println("Tu: " + respuesta + " vs " + palabra );
+								System.out.println("Empate");
+								
+					}else if (respuesta.equals("piedra") && palabra.equals("papel")) {
+							System.out.println("Tu: " + respuesta + " vs Maquina: " + palabra );
+								puntacion++;
+								System.out.println("Ganas..!!");
+								System.out.println("Puntuación: " + puntacion);
+								
+					}else if (respuesta.equals("piedra") && palabra.equals("tijera")) {
+							System.out.println("Tu: " + respuesta + " vs Maquina: " + palabra );
+								System.out.println("Pierdes..!!");
+								System.out.println("Puntuación: " + puntacion);
+								
+					}else if (respuesta.equals("papel") && palabra.equals("piedra")) {
+							System.out.println("Tu: " + respuesta + " vs Maquina: " + palabra );
+								System.out.println("Ganas..!!");
+								System.out.println("Puntuación: " + puntacion);
+								
+					}else if (respuesta.equals("papel") && palabra.equals("tijera")) {
+							System.out.println("Tu: " + respuesta + " vs Maquina: " + palabra );
+								System.out.println("Pierdes..!!");
+								System.out.println("Puntuación: " + puntacion);
+					}
+					else if (respuesta.equals("tijera") && palabra.equals("piedra")){
+							System.out.println("Tu: " + respuesta + " vs Maquina: " + palabra );
+								System.out.println("Pierdes..!!");
+								System.out.println("Puntuación: " + puntacion);
+					}else if (respuesta.equals("tijera") && palabra.equals("papel")){
+							System.out.println("Tu: " + respuesta + " vs Maquina: " + palabra );
+								System.out.println("Ganas..!!");
+								System.out.println("Puntuación: " + puntacion);
+					}
+			}
+	scanner.close();
+	}
+}

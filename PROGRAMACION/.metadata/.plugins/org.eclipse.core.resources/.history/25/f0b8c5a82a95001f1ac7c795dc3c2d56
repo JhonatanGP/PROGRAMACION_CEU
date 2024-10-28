@@ -14,17 +14,17 @@ public class Ej25 {
 			System.out.println("Piedra, papel, tijera... 1, 2 , 3 ... ya!!");
 			String p = sc.nextLine().toLowerCase();
 			Integer d = r.nextInt(1, 4);
-
+			System.out.println(" vs " + d);
 			
 			if(!p.equals("piedra") && !p.equals("papel") && !p.equals("tijera")) {
 				System.out.println("Opción no válida. Debe ser piedra, papel o tijera.");
 			}
 			if (p.equals("piedra")) {
-				System.out.println("1 vs " + d);
+				System.out.println("1");
 			}else if (p.equals("papel")) {
-				System.out.println("2 vs " + d);
+				System.out.println("2");
 			}else if (p.equals("tijera")) {
-				System.out.println("3 vs " + d);
+				System.out.println("3");
 			}
 			
 		} while (v);
