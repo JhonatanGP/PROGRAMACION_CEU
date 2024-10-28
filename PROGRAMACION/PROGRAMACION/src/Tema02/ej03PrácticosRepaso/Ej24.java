@@ -14,10 +14,14 @@ public class Ej24 {
 			Integer n = sc.nextInt();
 			if (n <= 0) {
 				System.out.println("El número no puede ser 0.");
-			}else {
-				for (int i = 0; i <= n; i++) {
+			} else {
+				for (int i = 1; i <= n; i++) {
 					if (i % 2 != 0) {
-						System.out.print(i + " + ");						
+						if (i == n) {
+							System.out.print(i);
+						} else {
+							System.out.print(i + " + ");
+						}
 						s += i;
 					}
 				}
