@@ -1,0 +1,59 @@
+package Tema02.ej03PrácticosRepaso;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Ej25 {
+
+	public static void main(String[] args) {
+		Random r = new Random();
+		Scanner sc = new Scanner(System.in);
+		Boolean v = true;
+		String[] juego = { "piedra", "papel", "tijera" };
+		String ama = "\033[33m";
+		String ver = "\033[32m";
+		String ve = "\033[30m";
+
+
+		do {
+			System.out.println("Piedra, papel, tijera... 1, 2 , 3 ... ya!!");
+			String p = sc.nextLine().toLowerCase();
+			Integer na = r.nextInt(0, 3);
+			String m = juego[na];
+
+			if (!p.equals("piedra") && !p.equals("papel") && !p.equals("tijera")) {
+				System.out.println("Opción no válida. Debe ser piedra, papel o tijera.");
+			}
+
+			if (p.equals(m)) {
+				System.out.print(p + " vs " + m + " ");
+				System.out.print(ama + " = Empate." + ve);
+				sc.nextLine();
+
+			} else if (p.equals("piedra") && m.equals("papel")) {
+				System.out.print(p + " vs " + m + ver + " = Ganas.");
+				System.out.println(" ");
+				sc.nextLine();
+
+			} else if (p.equals("piedra") && m.equals("tijera")) {
+				System.out.println(p + " vs " + m + ver + " = Ganas." +ve);
+				System.out.println(" ");
+				sc.nextLine();
+
+			} else if (p.equals("papel") && m.equals("tijera")) {
+				System.out.println(p + " vs " + m+ ve);
+				System.err.print(" = Pierdes");
+				sc.nextLine();
+
+			} else if (p.equals("papel") && m.equals("tijera")) {
+				System.out.println(" ");
+				sc.nextLine();
+
+			}
+			//v = false;
+
+		} while (v);
+
+		sc.close();
+	}
+}

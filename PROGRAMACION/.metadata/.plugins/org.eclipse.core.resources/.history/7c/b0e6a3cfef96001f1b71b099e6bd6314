@@ -1,0 +1,17 @@
+package tema03;
+
+public class Ej01Belen {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Integer[] listaNum = new Integer[15];
+		Integer cont = 2;
+
+		for (int i = 0; i <= listaNum.length -1; i++) {
+			listaNum[i]= cont;
+			cont = cont +2;
+				System.out.print(listaNum);
+			
+		}
+	}
+}

@@ -10,7 +10,5 @@ public class Ej01 {
 				System.out.print(i + " ");
 			}
 		}
-
 	}
-
 }

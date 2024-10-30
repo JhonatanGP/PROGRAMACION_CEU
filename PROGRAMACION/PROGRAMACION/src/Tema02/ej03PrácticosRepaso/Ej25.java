@@ -24,24 +24,21 @@ public class Ej25 {
 			}
 
 			if (p.equals(m)) {
-				System.out.print(p + " vs " + m + " ");
-				System.out.print(ama + " = Empate.");
+				System.out.println(p + " vs " + m + " = Empate. ");
 
 			} else if (p.equals("piedra") && m.equals("papel")) {
-				System.out.println(p + " vs " + m);
-				System.out.print(ver + " = Ganas");
+				System.out.println(p + " vs " + m + " = Ganas.");
 
 			} else if (p.equals("piedra") && m.equals("tijera")) {
 				System.out.println(p + " vs " + m + " = Ganas.");
 
 			} else if (p.equals("papel") && m.equals("tijera")) {
-				System.out.println(p + " vs " + m);
-				System.err.print(" = Pierdes");
+				System.out.println(p + " vs " + m + " = Pierdes");
 
 			} else if (p.equals("papel") && m.equals("tijera")) {
-				System.out.println("");
+				System.out.println(p + " vs " + m + " = Pierdes");
 			}
-			v = false;
+			//v = false;
 
 		} while (v);
 
