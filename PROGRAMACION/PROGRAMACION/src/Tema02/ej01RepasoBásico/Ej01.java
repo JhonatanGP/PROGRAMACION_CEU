@@ -7,9 +7,9 @@ public class Ej01 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Escibe un valor para x:");
+		System.out.println("Escribe un valor para x:");
 		Integer x = sc.nextInt();
-		System.out.println("Escibe un valor para y:");
+		System.out.println("Escribe un valor para y:");
 		Integer y = sc.nextInt();
 		
 		System.out.println("El valor de X = " + x + " y el valor de Y = " + y + ".");

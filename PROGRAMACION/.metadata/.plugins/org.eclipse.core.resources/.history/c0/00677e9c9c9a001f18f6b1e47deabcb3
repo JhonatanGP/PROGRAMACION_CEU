@@ -1,0 +1,18 @@
+package Tema02.ej01RepasoBásico;
+
+import java.util.Scanner;
+
+public class Ej04 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		Integer n = 26;
+		String s = "Jhonatan";
+		
+		System.out.println("Mi nombre es " + s + " y mi edad es " + n + " años.");		
+		sc.close();
+	}
+
+}
