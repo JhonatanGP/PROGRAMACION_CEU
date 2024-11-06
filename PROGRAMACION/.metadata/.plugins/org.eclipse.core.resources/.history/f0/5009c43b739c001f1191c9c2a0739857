@@ -1,0 +1,18 @@
+package tema03;
+
+import java.util.Iterator;
+
+public class Apuntest3 {
+
+	public static void main(String[] args) {
+		// Split separa en cadenas y los agrupa/devuelve un array con las posiciones que tu le indiques
+		String cad = "10/12/2024";
+		String arr [] = cad.split("/");
+		for (String x : arr) {
+			System.out.println(x);
+			
+		}
+		
+	}
+
+}
