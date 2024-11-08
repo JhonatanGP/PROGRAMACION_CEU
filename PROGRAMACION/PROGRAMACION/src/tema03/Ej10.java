@@ -11,7 +11,6 @@ public class Ej10 {
 		int finall = 1;
 		int resultado = 0;
 
-		// ArrayList<Integer> arraylist = new ArrayList<Integer>();
 		do {
 			System.out.println("Escribe el tamaño de serie Fibonacci, mayor a 2:");
 			tamaño = sc.nextInt();
@@ -30,7 +29,5 @@ public class Ej10 {
 			}
 		} while (!(tamaño > 2));
 		sc.close();
-
 	}
-
 }
