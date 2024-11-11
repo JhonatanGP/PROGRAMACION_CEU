@@ -1,0 +1,19 @@
+package tema03;
+
+import java.util.Scanner;
+
+public class Ej16 {
+
+	public static void main(String[] args) {
+		String normal = ""; // Lo inicializo a 0 con un ""
+		String alreves = "";// Lo inicializo a 0 con un ""
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Escribe una frase y contaré el número de 'a' y palabras:");
+		String f = sc.nextLine();
+		String[] frase = f.split(" ");// para guardar cada palabra
+		
+		
+		sc.close();
+	}
+}

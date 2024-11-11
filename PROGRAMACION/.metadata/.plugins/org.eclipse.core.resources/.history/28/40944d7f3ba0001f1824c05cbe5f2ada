@@ -1,0 +1,39 @@
+package tema03;
+
+import java.util.Scanner;
+
+public class Ej14 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Escriba una frase:");
+		String frase = sc.nextLine();
+		// Creo un array y guardo la palabra
+		String[] caracter = frase.split(" "); //
+		// Lo recorro con un for
+		for (int i = 0; i < caracter.length; i++) {
+			String pos1 = caracter[i]; //Utilizo la i para que cada vez incremente la posicion
+			if (i == 0) {
+				String p1 = pos1.toLowerCase();
+				System.out.print(p1);
+			}else if (i > 0){
+				String p2 = caracter[i];
+				//creo otro array y le hago split
+				String[] may = p2.split(""); // "" para cada caracter
+				for (int j = 0; j < may.length; j++) {
+					String pos2 = may[i];
+					if (j == 0) {
+						String p22 = pos2.toUpperCase();
+						System.out.print(p22);
+					}else {
+						System.out.print(pos2);
+					}
+				}
+			}
+
+		}
+
+		sc.close();
+	}
+}

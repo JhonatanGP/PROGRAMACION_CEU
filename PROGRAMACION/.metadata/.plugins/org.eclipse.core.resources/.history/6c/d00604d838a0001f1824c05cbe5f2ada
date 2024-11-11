@@ -1,0 +1,25 @@
+package tema03;
+
+import java.util.Scanner;
+
+public class Ej14 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Escriba una frase:");
+		String frase = sc.nextLine();
+		// Creo un array y guardo la palabra
+		String[] caracter = frase.split(" "); //
+		// Lo recorro con un for
+		for (int i = 0; i < caracter.length; i++) {
+			if (i == 0) {
+				String pos1 = caracter[0].toLowerCase();
+				System.out.println(caracter[i]);
+			}
+
+		}
+
+		sc.close();
+	}
+}
