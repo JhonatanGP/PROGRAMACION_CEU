@@ -1,0 +1,17 @@
+package tema03.ejRepaso;
+
+import java.util.Scanner;
+
+public class Ej07 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Escribe tu telegrama: ");
+		String t = sc.nextLine();
+		String[] tg = t.split(" ");
+		//Para calcular el precio
+		
+		
+	}
+}
