@@ -6,9 +6,9 @@ public class Ej08 {
 
 	public static void main(String[] args) {
 
-		Scanner scanner = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		System.out.println("Escribe tu HTML:");
-		String html = scanner.nextLine();
+		String html = sc.nextLine();
 
 		String[] frase = html.split("");
 		Boolean confirmar = false;
@@ -24,6 +24,7 @@ public class Ej08 {
 			}
 		}
 		System.out.println(guardar);
+		sc.close();
 	}
 
 }
