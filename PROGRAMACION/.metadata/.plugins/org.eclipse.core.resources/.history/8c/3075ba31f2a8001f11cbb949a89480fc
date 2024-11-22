@@ -16,14 +16,14 @@ public class Ej09 {
 		Boolean salto = false;
 
 		for (int i = 0; i < frase.length; i++) {
-			if (frase[i].equals("<")) {// Compara cada caracter que se encuentra en cada posicion del array para ver donde esta "<"
-				confirmar = true;	   //  
-				if (salto == true) {   //Se salta este if porque esta en true, no va entrar hasta
-					guardar += "\n";   // Salto de línea
+			if (frase[i].equals("<")) {
+				confirmar = true;
+				if (salto == true) {
+					guardar += "\n"; // salto de línea
 					salto = false;
 				}
 
-			} else if (frase[i].equals(">")) { //Hasta que no se encuentre ">" 
+			} else if (frase[i].equals(">")) {
 				confirmar = false;
 			} else if (confirmar == false) {
 				guardar += frase[i];
