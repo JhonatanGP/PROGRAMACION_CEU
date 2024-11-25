@@ -11,10 +11,6 @@ public class Ej10 {
 		Integer[] alumnos = new Integer[na];
 		for (int i = 0; i < alumnos.length; i++) {
 			System.out.println("¿Cuál es el nombre de alumno" +(i+1) + "?");
-			String nombre = sc.nextLine();
-			for (int j = 0; j < alumnos.length; j++) {
-				
-			}
 
 		}
 

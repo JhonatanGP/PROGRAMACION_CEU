@@ -8,13 +8,9 @@ public class Ej10 {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("¿Cuántos alumnos hay en clase?");
 		Integer na = sc.nextInt();
-		Integer[] alumnos = new Integer[na];
+		String[] alumnos = new String[na];
 		for (int i = 0; i < alumnos.length; i++) {
 			System.out.println("¿Cuál es el nombre de alumno" +(i+1) + "?");
-			String nombre = sc.nextLine();
-			for (int j = 0; j < alumnos.length; j++) {
-				
-			}
 
 		}
 
