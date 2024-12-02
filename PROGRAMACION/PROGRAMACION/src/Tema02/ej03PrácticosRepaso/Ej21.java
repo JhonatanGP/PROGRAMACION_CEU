@@ -26,7 +26,6 @@ public class Ej21 {
 					v = false;
 				}
 			}
-
 		} while (v);
 		sc.close();
 	}

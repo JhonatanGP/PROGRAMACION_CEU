@@ -10,16 +10,15 @@ public class Ej044 {
 		Integer num = 1;
 		Integer suma = 0;
 
-		while(num != 0) {
+		while (num != 0) {
 			System.out.println("Dame un número");
 			num = sc.nextInt();
 			suma = suma + num;
 		}
-					
 		System.out.print("Resultado es:" + suma + ".");
-		
+
 		sc.close();
-		
+
 	}
 
 }

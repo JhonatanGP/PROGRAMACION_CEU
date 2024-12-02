@@ -27,12 +27,9 @@ public class Ej10 {
 				System.out.println(p3);
 
 				v = false;
-
 			}else {
 				System.out.println("No lo he entendido.");
-				
 			}
-
 		} while (v);
 
 		sc.close();

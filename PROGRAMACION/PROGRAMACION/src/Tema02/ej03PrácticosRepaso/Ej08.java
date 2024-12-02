@@ -13,11 +13,11 @@ public class Ej08 {
 			String t = sc.nextLine();
 
 			// Primero hola
-			Integer primero = t.indexOf(" ");// busca el primer espacio
+			Integer primero = t.indexOf(" ");// busca el 1 espacio
 			String p1 = t.substring(0, primero + 1);
 
 			// Segundo hastaluego
-			Integer segundo = t.lastIndexOf(" ");// busca el primer espacio
+			Integer segundo = t.lastIndexOf(" ");// busca el 2 espacio
 			String p2 = t.substring(segundo, t.length()); // Probar +1 luego
 
 			// Mensaje. Para mensaje no hace falta Integer

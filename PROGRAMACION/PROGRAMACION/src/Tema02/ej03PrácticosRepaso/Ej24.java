@@ -8,7 +8,7 @@ public class Ej24 {
 		Scanner sc = new Scanner(System.in);
 		Boolean v = true;
 		Integer s = 0;
-
+     // SUMA DE N IMPARES
 		do {
 			System.out.println("Ingrese un número:");
 			Integer n = sc.nextInt();
@@ -28,7 +28,6 @@ public class Ej24 {
 				System.out.println(" = " + s);
 				v = false;
 			}
-
 		} while (v);
 
 		sc.close();

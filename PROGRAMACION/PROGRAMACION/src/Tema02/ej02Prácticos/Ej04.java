@@ -9,18 +9,15 @@ public class Ej04 {
 		Scanner sc = new Scanner(System.in);
 		Integer num = 0;
 		Integer suma = 0;
-		
-		do {
-			System.out.println("Averigue la suma de números. Para finalizar escriba 0.");
-			num = sc.nextInt();
-			suma = suma + num;//suma += num;
-		}
-		while(num != 0);
-					
-		System.out.println("La suma de todos los números es " + suma + ".");
-		
-		sc.close();
-		
-	}
+		System.out.println("Averigue la suma de números. Para finalizar escriba 0.");
 
+		do {
+			System.out.println("Ingrese número: ");
+			num = sc.nextInt();
+			suma = suma + num;// suma += num;
+		} while (num != 0);
+		System.out.println("La suma de todos los números es " + suma + ".");
+
+		sc.close();
+	}
 }

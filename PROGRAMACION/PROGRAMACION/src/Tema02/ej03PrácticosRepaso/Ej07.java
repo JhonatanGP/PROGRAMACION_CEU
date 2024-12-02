@@ -7,35 +7,28 @@ public class Ej07 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		Boolean v = true;
-
-		do {
-			Integer suma = 0;
-			Integer total = 0;
-			System.out.println("Ingresa un número y averigua su suma consecutiva");
-			Integer n = sc.nextInt();
-
-			if (n >= 1 && n <= 10) {
-				v = true;
-				for (int i = 1; i <= 10; i++) {
-					suma += n;
-					total = total + suma;
-
-					if (i < 10) {
-						System.out.print(suma + " + ");
-					} else {
-						System.out.print(suma + " = " + total);
-
-					}
-				}
-
+		int numero;
+		
+		while (true) {
+			System.out.print("Introduce un número entre 1 y 10 (0 para salir):");
+			numero = sc.nextInt();
+			if (numero == 0) {
+				System.out.println("Programa terminado.");
+				break;
+			} else if (numero < 1 || numero > 10) {
+				System.out.println("Número incorrecto. Debe estar entre 1 y 10.");
 			} else {
-				System.out.println("El número debe ser mayor que 0 y menor o igual a 10");
+				int suma = 0;
+				for (int i = numero; i <= numero * 10; i += numero) {
+					System.out.print(i);
+					if (i < numero * 10) {
+						System.out.print(" + ");
+					}
+					suma += i;
+				}
+				System.out.println(" = " + suma);
 			}
-
-			System.out.println();
-
-		} while (v);
+		}
 		sc.close();
 	}
 

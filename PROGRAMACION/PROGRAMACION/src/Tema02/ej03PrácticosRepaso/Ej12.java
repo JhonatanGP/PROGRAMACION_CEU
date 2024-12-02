@@ -8,15 +8,12 @@ public class Ej12 {
 
 		Scanner sc = new Scanner(System.in);
 		Boolean v = true;
-
 		do {
 			System.out.println("Escriba un número mayor que cero:");
 			Integer n = sc.nextInt();
 
 			if (n <= 0) {
 				System.out.println("El número ingresado no es válido.");
-				v = true;
-
 			} else {
 				for (int i = 0; i < 1; i++) {
 					System.out.print(" ");

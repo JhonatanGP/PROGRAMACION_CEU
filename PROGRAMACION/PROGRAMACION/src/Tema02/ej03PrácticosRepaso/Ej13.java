@@ -20,10 +20,7 @@ public class Ej13 {
 			} else {
 				s = s + " " + p1;
 			}
-
 		} while (v);
-		
 		sc.close();
 	}
-	
 }

@@ -8,11 +8,9 @@ public class Ej11 {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		Boolean v = true;
-
 		do {
 			System.out.println("Ingrese un número:");
 			Float n1 = sc.nextFloat();
-
 			System.out.println("Ingrese otro número:");
 			Float n2 = sc.nextFloat();
 			System.out.println("**** MENÚ ****\n  1. Sumar\n  2. Restar\n  3. Multiplicar\n  4. Dividir\n  0. Salir");
@@ -21,38 +19,29 @@ public class Ej11 {
 			if (n3 == 0) {
 				System.out.println("Salir");
 				v = false;
-
 			} else if (n3 == 1) {
 				System.out.println("SUMA");
 				Float suma = n1 + n2;
 				System.out.println("Resultado: " + n1 + " + " + n2 + " = " + suma);
-				v = true;
 			} else if (n3 == 2) {
 				System.out.println("RESTA");
 				Float resta = n1 - n2;
 				System.out.println("Resultado: " + n1 + " - " + n2 + " = " + resta);
-				v = true;
 			} else if (n3 == 3) {
 				System.out.println("MULTIPLICACIÓN");
 				Float mult = n1 * n2;
 				System.out.println("Resultado: " + n1 + " X " + n2 + " = " + mult);
-				v = true;
 			} else if (n3 == 4) {
 				if (n1 == 0 || n2 == 0) {
 					System.out.println("No se puede hacer la división");
-					v = true;
 				} else {
 					System.out.println("DIVISIÓN");
 					Float div = n1 / n2;
 					System.out.println("Resultado: " + n1 + " / " + n2 + " = " + div);
-					v = true;
 				}
-
 			} else {
 				System.out.println("No lo he entendido.");
-				v = true;
 			}
-
 		} while (v);
 
 		sc.close();
