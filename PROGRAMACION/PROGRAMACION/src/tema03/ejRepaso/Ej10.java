@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Ej10 {
 
 	public static void main(String[] args) {
+<<<<<<< HEAD
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Cuntos alumnos hay en clase?");
 		Integer cantAlumnos = scanner.nextInt();
@@ -13,6 +14,20 @@ public class Ej10 {
 		Integer[] medias = new Integer[cantAlumnos];
 		String[] nombres = new String[cantAlumnos];
 		Integer sumaNotas;
+=======
+		Scanner sc = new Scanner(System.in);
+		System.out.print("¿Cuántos alumnos hay en clase?");
+		Integer na = sc.nextInt();
+		sc.nextLine();
+		Integer[] alumnos = new Integer[na];
+		for (int i = 0; i < alumnos.length; i++) {
+			System.out.println("¿Cuál es el nombre de alumno" +(i+1) + "?");
+			String nombre = sc.nextLine();
+			
+			for (int j = 0; j < alumnos.length; j++) {
+				
+			}
+>>>>>>> a7009d760e9e2d19fdfb32cd0c94818d4e5f8f7a
 
 		for (int i = 0; i < nombres.length; i++) {
 			System.out.println("Cul es el nombre el alumno " + (i+1));
