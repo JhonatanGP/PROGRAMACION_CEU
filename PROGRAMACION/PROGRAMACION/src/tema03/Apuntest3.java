@@ -28,6 +28,7 @@ public class Apuntest3 {
 	        // Solo añade "-" si no es el último elemento
 	        if (i < ar.length - 1) {
 	            System.out.print("-");
+	            
 	        }
 	    }
 		
