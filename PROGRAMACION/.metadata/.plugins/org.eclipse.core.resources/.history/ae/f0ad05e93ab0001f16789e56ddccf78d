@@ -1,0 +1,18 @@
+package practica;
+
+import java.util.Scanner;
+
+public class Ej05 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Escribe un número largo ");
+		String num = sc.nextLine();
+		
+		String[] bloque = num.split("0");
+		
+		
+
+	
+	}
+}

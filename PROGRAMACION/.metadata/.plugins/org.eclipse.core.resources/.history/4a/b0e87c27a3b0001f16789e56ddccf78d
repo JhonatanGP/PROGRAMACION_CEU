@@ -1,0 +1,33 @@
+package practica;
+
+import java.util.Scanner;
+
+public class Ej06 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Suma de números.");
+		boolean v =true;
+		
+		do {
+			System.out.println("Escriba un número: ");
+			int n = sc.nextInt();
+			int suma = 0;
+			
+			if(n>=1 && n<=10) {
+				for (int i = 0; i < 10; i++) {
+					suma+=n;
+					System.out.print(suma);
+					v=false;
+				}
+			}else {
+				System.out.println("Número no válido");
+			}
+			
+			
+		}while(v);
+		
+	}
+
+}

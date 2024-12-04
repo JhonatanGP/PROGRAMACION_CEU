@@ -1,0 +1,34 @@
+package practica;
+
+import java.util.Scanner;
+
+public class Ej06 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Indique el precio");
+		double precio = sc.nextDouble();
+		System.out.println("Indique las unidades");
+		int uni = sc.nextInt();
+
+		double des = 0.0;
+
+		if (uni > 100) {
+			des = 40;
+		} else if (uni >= 25) {
+			des = 20;
+		} else if (uni >= 10) {
+			des = 10;
+		}
+		Double sub = uni*precio;
+		double d = (des*sub)/100;
+		double t= sub-d;
+		
+System.out.println("subtotal = "+uni+" x "+precio+" = "+sub);
+System.out.println("descuento = "+des+" % de "+sub+" = "+d);
+System.out.println("total = "+sub+" - "+d+" = "+t);
+
+	}
+
+}

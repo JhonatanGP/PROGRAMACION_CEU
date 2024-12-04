@@ -1,0 +1,23 @@
+package practica;
+
+import java.util.Scanner;
+
+public class Ej01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+				
+		while(true) {
+			System.out.println("Escriba una palabra que contenga la letra M o m:");
+			String p = sc.nextLine().toUpperCase();
+			
+			if(p.contains("m")) {
+				System.out.println("Correcto");
+			}else {
+				System.out.println("Error");
+			}
+		}
+	}
+
+}

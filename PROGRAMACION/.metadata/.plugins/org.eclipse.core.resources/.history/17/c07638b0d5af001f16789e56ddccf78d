@@ -1,0 +1,17 @@
+package practica;
+
+import java.util.Scanner;
+
+public class Ej03 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		while(true) {
+			System.out.println("Escribe un número comprendido entre 10-20 ambos inclusive.");
+
+		}
+		
+	}
+
+}

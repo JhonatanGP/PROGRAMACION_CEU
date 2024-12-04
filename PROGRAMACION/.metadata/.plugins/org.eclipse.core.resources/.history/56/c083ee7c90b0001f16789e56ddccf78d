@@ -1,0 +1,13 @@
+package practica;
+
+import java.util.Scanner;
+
+public class Ej06 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("**********MENÚ**********\n\t1. Abrir\n\t2. Guardar\n\t3. Modificar\n\t4. Salir");
+	}
+
+}

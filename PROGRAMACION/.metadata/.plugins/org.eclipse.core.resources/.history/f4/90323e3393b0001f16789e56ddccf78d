@@ -1,0 +1,31 @@
+package practica;
+
+import java.util.Scanner;
+
+public class Ej06 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		Boolean v =true;
+		do {
+			System.out.println("\t****MENÚ****\n\t1. Abrir\n\t2. Guardar\n\t3. Modificar\n\t4. Salir");
+			Integer n = sc.nextInt();
+			
+			if(n ==1 ) {
+				System.out.println("Ha elegido Abrir.");
+			}else if(n ==2 ) {
+				System.out.println("Ha elegido Guardar.");
+			}else if(n ==3 ) {
+				System.out.println("Ha elegido Modificar.");
+			}else if(n ==4 ) {
+				System.out.println("Ha elegido Salir.");
+				v=false;
+			}else {
+				System.out.println("Opción incorrecta");
+			}
+		}while(v);
+		
+	}
+
+}

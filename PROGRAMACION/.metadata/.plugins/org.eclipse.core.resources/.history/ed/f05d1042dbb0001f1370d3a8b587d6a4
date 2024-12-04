@@ -1,0 +1,5 @@
+package tema03.ejRepaso;
+
+import java.util.Scanner;
+
+public class Ej10 {

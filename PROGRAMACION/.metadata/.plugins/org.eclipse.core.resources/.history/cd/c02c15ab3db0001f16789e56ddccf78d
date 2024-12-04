@@ -1,0 +1,30 @@
+package practica;
+
+import java.util.Scanner;
+
+public class Ej05 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Escribe un número largo ");
+		String num = sc.nextLine();
+
+		String[] bloque = num.split("0");
+
+		for (int i = 0; i < bloque.length; i++) {
+			if (!bloque[i].isEmpty()) {
+				int suma = 0;
+
+				for (int j = 0; j < bloque.length; j++) {
+					// Extraer cada dígito como un substring
+					String digitoString = bloque[i].substring(i, i + 1);
+					// Convertir el substring en entero y sumar
+					suma += Integer.parseInt(digitoString);
+				}
+				// Imprimir el bloque y su suma
+				System.out.println("Bloque: " + bloque + " → Suma: " + suma);
+			}
+		}
+		sc.close();
+	}
+}

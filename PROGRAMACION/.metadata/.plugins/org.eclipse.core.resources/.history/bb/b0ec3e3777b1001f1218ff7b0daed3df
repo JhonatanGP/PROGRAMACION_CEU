@@ -1,0 +1,37 @@
+package tema03.ejRepaso;
+
+import java.util.Scanner;
+
+public class Ej10 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Escribe tu HTML:");
+		String html = sc.nextLine();
+
+		String[] frase = html.split("");
+		Boolean confirmar = false;
+		String guardar = ""; // Para guardar las palabras
+		Boolean salto = false;
+
+		for (int i = 0; i < frase.length; i++) {
+			if (frase[i].equals("<")) {// Compara cada caracter que se encuentra en cada posicion del array para ver donde esta "<"
+				confirmar = true;	   //  
+				if (salto == true) {   //Se salta este if porque esta en true, no va entrar hasta
+					guardar += "\n";   // Salto de línea
+					salto = false;
+				}
+
+			} else if (frase[i].equals(">")) { //Hasta que no se encuentre ">" 
+				confirmar = false;
+			} else if (confirmar == false) {
+				guardar += frase[i];
+				salto = true;
+			}
+		}
+		System.out.println(guardar);
+		sc.close();
+	}
+
+}
