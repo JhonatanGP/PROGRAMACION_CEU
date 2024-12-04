@@ -8,6 +8,7 @@ public class Apuntest3 {
 		// Split separa en cadenas y los agrupa/devuelve un array con las posiciones que tu le indiques
 		String cad = "10/12/2024";
 		String arr [] = cad.split("/");
+		
 		for (String x : arr) {
 			//System.out.print(x + " ");
 			
