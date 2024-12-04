@@ -27,7 +27,5 @@ public class Apuntest3 {
 	            System.out.print("-");
 	        }
 	    }
-		
 	}
-
 }
