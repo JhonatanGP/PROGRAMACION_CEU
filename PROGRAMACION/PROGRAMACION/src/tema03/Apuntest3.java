@@ -1,7 +1,5 @@
 package tema03;
 
-import java.util.Iterator;
-
 public class Apuntest3 {
 
 	public static void main(String[] args) {
@@ -13,7 +11,6 @@ public class Apuntest3 {
 			//System.out.print(x + " "); 
 			System.out.print(x + "-");
 		}
-		
 		System.out.println();
 		  // Cadena con una fecha en formato "día/mes/año"
 	    String ca = "10/12/2024";
