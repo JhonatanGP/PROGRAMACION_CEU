@@ -10,8 +10,7 @@ public class Apuntest3 {
 		String arr [] = cad.split("/");
 		
 		for (String x : arr) {
-			//System.out.print(x + " ");
-			
+			//System.out.print(x + " "); 
 			System.out.print(x + "-");
 		}
 		
