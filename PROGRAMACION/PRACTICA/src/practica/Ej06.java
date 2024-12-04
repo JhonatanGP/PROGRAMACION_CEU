@@ -9,6 +9,7 @@ public class Ej06 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Suma de números.");
 		
+		
 
 	}
 
