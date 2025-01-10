@@ -1,0 +1,16 @@
+package tema04.EjBasicos01.Ej09;
+
+public class ArraysUtils {
+
+	//Para imprimir algo se utiliza void(no pongo nada de string, integer...)
+	public static void imprimirArray(String[] array) {
+		
+		for (String lista : array) {
+			System.out.print(lista + " ");
+		}
+		System.out.println();
+	}
+
+	
+
+}
