@@ -15,8 +15,15 @@ public class Apuntes {
 		- Cuando te dice imprimir es un void: imprime un saludo y yasta, a no 
 		ser que te pida algo más.
 		
+		- Para crearme un objeto, primero necesito un constructor desde el main.
 		
-		
+		public Rotulador(){
+			Rotulador negro = new Rotulador()
+		}
+		public Rotulador(String color, String marca){
+			Rotulador negro = new Rotulador("azul", "marca")
+		}
+		- Luego en la otra clase creo los get and set(se utilizan en el main, para cambiar datos y guardarlos)
 		
 		
 		

@@ -12,8 +12,21 @@ public class ArraysUtils {
 		}
 	}
 
+	// EJ10
 	public static String obtenerPalabra(String[] cad, Integer num) {
 		return cad[num];
 	}
 
+	// Ej11
+	public static int buscarPalabra(String[] a, String b) {
+		for (int i = 0; i < a.length; i++) {
+			if (b.equalsIgnoreCase(a[i])) {
+				return i;
+			}
+		}
+
+		System.out.println("No existe.");
+
+		return -1;
+	}
 }

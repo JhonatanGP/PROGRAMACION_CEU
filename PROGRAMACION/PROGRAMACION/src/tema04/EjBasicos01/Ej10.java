@@ -14,7 +14,13 @@ public class Ej10 {
 		System.out.println("Escribe un número");
 		Integer n = sc.nextInt();
 
-		System.out.println(ArraysUtils.obtenerPalabra(array1, n));
+		if (n >= array1.length || n < 0) {
+			System.out.println(" ");
+			System.out.println("No hay ninguna.");
+		} else {
+			System.out.println(ArraysUtils.obtenerPalabra(array1, n));
+
+		}
 
 		sc.close();
 	}
