@@ -20,13 +20,17 @@ public class Ej19 {
 		System.out.println("Escribe la edad:");
 		Integer edad = sc.nextInt();
 		a1.setEdad(edad);
-
-		/* System.out.println("Escribe la nota:"); Float nota = sc.nextFloat();
-		 * a1.setNota(nota); */
-
-		Integer nota = 0;
+		
+		System.out.println("Escribe la nota:");
+		Float nota = sc.nextFloat();
+		a1.setNota(nota);
+		
 		System.out.println("Tus datos son los siguientes: \n" + a1.getDni() + "\n" + a1.getNombre() + "\n"
-				+ a1.getEdad() + " años" + "\nNota:" + Alumno.aprobar(nota));
+				+ a1.getEdad() + " años" + "\nNota:" + a1.getNota());
+		
+		a1.aprobar();
+		
+		System.out.println("Nueva nota:" + a1.getNota());
 		
 		sc.close();
 	}

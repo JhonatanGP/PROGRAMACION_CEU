@@ -1,0 +1,20 @@
+package tema04.EjBasicos01.Repaso;
+
+public class main {
+
+	public static void main(String[] args) {
+		/*
+		 * Caballo caballo1 = new Caballo(); System.out.println(caballo1.nombre);
+		 * System.out.println(caballo1.carrerasGanadas);
+		 * System.out.println(caballo1.color); *
+		 */
+		Caballo caballo1 = new Caballo();
+		System.out.println(caballo1.getColor());
+		System.out.println(caballo1.getCarrerasGanadas());
+		caballo1.setEdad(20);
+		System.out.println(caballo1.anyoNacimiento());
+		
+		
+	}
+
+}

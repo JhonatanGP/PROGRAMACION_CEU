@@ -11,9 +11,8 @@ public class Alumno {
 
 	// Tercero get and set
 
-	public static Integer aprobar(Integer nota) {
-
-		return nota = 5;
+	public void aprobar() {
+		this.nota = 5.0f;
 	}
 
 	public String getDni() {
