@@ -29,7 +29,8 @@ public class Apuntes {
 					Rotulador negro = new Rotulador("azul", "marca")
 
 		
-		
+		== si es el mismo objeto
+		equals si los atributos son los mismos.
 		
 		
 		

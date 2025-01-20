@@ -35,8 +35,8 @@ public class Ej23 {
 		a2.setCurso(curso2);
 
 		System.out.println("Tus datos son los siguientes: \n" + a2.getDni() + "\n" + a2.getNombre() + "\n"
-				+ a2.getEdad() + " años" + "\nNota:" + a2.getNota() + "\nCurso:" + a2.getCurso().getDescripcion() + " "
-				+ a2.getCurso().getIdentificador());
+				+ a2.getEdad() + " años" + "\nNota:" + a2.getNota() + "\nCurso:"  
+				+ a2.getCurso().getDescripcion() + " " + a2.getCurso().getIdentificador());
 
 		System.out.println();
 

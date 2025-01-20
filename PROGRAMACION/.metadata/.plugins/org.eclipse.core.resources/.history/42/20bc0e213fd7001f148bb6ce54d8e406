@@ -1,0 +1,35 @@
+package tema04.EjBasicos01.Ej25;
+
+import java.util.Scanner;
+
+public class Ej25 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Alumno a1 = new Alumno("54999853E");
+		Alumno a2 = new Alumno("54999853E");
+		Alumno a3 = new Alumno("54999853E");
+
+		Alumno[] lista = new Alumno [] {a1,a2,a3};
+		
+		
+		Curso curso2 = new Curso();
+		curso2.setDescripcion("DAM-DAW");
+		curso2.setIdentificador("1");
+
+		a2.setNombre("MANUEL");
+		a2.setEdad(54);
+		a2.setNota(3f);
+		a2.setCurso(curso2);
+
+		/*
+		 * System.out.println("Tus datos son los siguientes: \n" + a2.getDni() + "\n" +
+		 * a2.getNombre() + "\n" + a2.getEdad() + " años" + "\nNota:" + a2.getNota() +
+		 * "\nCurso:" + a2.getCurso().getDescripcion() + " " + a2.getCurso().getIdentificador());
+		 */
+		System.out.println(a2);
+
+		sc.close();
+	}
+
+}

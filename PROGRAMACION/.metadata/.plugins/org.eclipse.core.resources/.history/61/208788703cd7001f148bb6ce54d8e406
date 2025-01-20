@@ -1,0 +1,11 @@
+package tema04.EjBasicos01.Ej24;
+
+public class Profesor extends Persona{
+
+	@Override
+	public String toString() {
+		return "Profesor: Nombre=" + getNombre() + ", Edad=" + getEdad();
+	}
+	
+
+}
