@@ -1,9 +1,0 @@
-package tema04.EjBasicos01.Repaso;
-
-public class Caballo {
-	private String nombre;
-	private Integer carrerasGanadas;
-	private Integer edad;
-	private String color;
-
-}
