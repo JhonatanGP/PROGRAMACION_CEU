@@ -1,0 +1,29 @@
+package tema04.EjBasicos01.Ej34;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Ej34 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		List <String> lista = new ArrayList <>();
+		//FOR PARA PEDIR 5 CADENAS 
+		for (int i = 0; i < 5; i++) {
+			System.out.println("Escribe una cadena:");
+			String cad = sc.nextLine();
+			lista.add(cad);
+		}
+		//PONER TODAS EN MAYUSCULAS
+			for (int i = 0; i < lista.size(); i++) {
+				System.out.println(lista.set(i, lista.get(i).toUpperCase()));
+			}
+			for (int i = 0; i < lista.size(); i++) {
+				System.out.println(lista.set(i, lista.get(i).toUpperCase()));
+				
+			}
+		sc.close();
+	}
+}

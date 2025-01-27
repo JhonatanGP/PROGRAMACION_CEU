@@ -1,0 +1,46 @@
+package tema04.EjBasicos01.Ej37;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ColaCadenas {
+	//1 ATRIBUTOS
+	private List<String> lista = new ArrayList<>();
+	
+	// CONSTRUCTOR
+	public ColaCadenas(List<String>lista) {
+		
+	}
+	
+	//2 GET AND SET
+	public List<String> getLista() {
+		return lista;
+	}
+
+	public void setLista(List<String> lista) {
+		this.lista = lista;
+	}
+	
+	//3 METODOS 
+	//añadirCadena():recibe una cadena y no devuelve nada. Se tendrá que añadir esa cadena a la cola de espera. 
+	public void añadirCadena(String cad) {
+		lista.add(cad);
+	}
+	// sacarCadena(): no recibe nada y devuelve una cadena. Tendrá que devolver la cadena que hace más tiempo que se añadió.
+	public String  sacarCadena(String cad) {
+		
+		return cad;
+	}
+	
+	// getTamaño(): no recibe nada y devuelve un entero con todos los elementos que hay en la cola
+	public Integer getTamaño() {
+		
+		return 0;
+	}
+	
+	// - toString(): debe imprimir el contenido de la cola 
+
+	
+	
+
+}
