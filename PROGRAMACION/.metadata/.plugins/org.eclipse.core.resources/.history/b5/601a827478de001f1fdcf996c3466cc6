@@ -1,10 +1,10 @@
-package tema04.EjBasicos01.Ej37;
+package tema04.EjBasicos01.Ej38;
 
 public class App {
 
 	public static void main(String[] args) {
 		// 1. Crea un objeto cola.
-		ColaCadenas cola = new ColaCadenas();
+		PilaCadenas cola = new PilaCadenas();
 
 		System.out.println(cola);
 		// 2.Añade a la cola las palabras “primero” y “segundo” 

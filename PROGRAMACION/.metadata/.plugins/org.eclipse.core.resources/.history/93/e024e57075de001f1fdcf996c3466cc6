@@ -30,7 +30,7 @@ public class ColaCadenas {
 		}
 		String cadena = cola.get(0);
 		cola.remove(0);
-		return cadena; // o return cola.remove
+		return cadena;
 	}
 	// getTamaño(): no recibe nada y devuelve un entero con todos los elementos que hay en la cola
 	public Integer getTamaño() {
@@ -41,7 +41,7 @@ public class ColaCadenas {
 
 	@Override
 	public String toString() {
-		return  cola.toString();
+		return "ColaCadenas [lista=" + cola + "]";
 	}
 	
 	

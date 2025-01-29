@@ -41,7 +41,7 @@ public class ColaCadenas {
 
 	@Override
 	public String toString() {
-		return  cola.toString();
+		return "ColaCadenas [lista=" + cola + "]";
 	}
 	
 	

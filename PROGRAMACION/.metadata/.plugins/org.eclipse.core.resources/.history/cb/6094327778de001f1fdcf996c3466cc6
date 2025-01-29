@@ -1,14 +1,14 @@
-package tema04.EjBasicos01.Ej37;
+package tema04.EjBasicos01.Ej38;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ColaCadenas {
+public class PilaCadenas {
 	//1 ATRIBUTOS
 	private List<String> cola;
 	
 	// CONSTRUCTOR
-	public ColaCadenas() {
+	public PilaCadenas() {
 		cola = new ArrayList<>();	
 	}	
 	//2 GET AND SET
