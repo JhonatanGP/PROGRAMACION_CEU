@@ -9,13 +9,6 @@ public class Alumno {
 	
 	//Segundo los constructores
 	
-	
-	//Tercero get and set
-
-	public String getDni() {
-		return dni;
-	}
-
 	/*En este ejercicio no hace falta crear ninguno, utiliza por defecto un constructor vacío.
 	 * public Alumno(Integer dni, String nombre, Integer edad, Float nota) {
 		super();
@@ -24,6 +17,11 @@ public class Alumno {
 		this.edad = edad;
 		this.nota = nota;
 	}*/
+	//Tercero get and set
+
+	public String getDni() {
+		return dni;
+	}
 
 	public void setDni(String dni) {
 		this.dni = dni;

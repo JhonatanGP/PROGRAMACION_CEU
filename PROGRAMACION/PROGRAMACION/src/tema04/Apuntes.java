@@ -32,6 +32,8 @@ public class Apuntes {
 		== si es el mismo objeto
 		equals si los atributos son los mismos.
 		
+		Si se pone Integer se pone equals, si se pone int ==.
+		
 		
 		
 		

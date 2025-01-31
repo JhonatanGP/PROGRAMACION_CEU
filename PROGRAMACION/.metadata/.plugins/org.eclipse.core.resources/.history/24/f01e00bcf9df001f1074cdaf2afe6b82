@@ -1,0 +1,56 @@
+package tema04.EjBasicos01.Ej41;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+	/* 1. Crea dos equipos con al menos 3 jugadores cada uno. Solicitando los datos al usuario. Designa al capitán 
+		de cada equipo (será el primer jugador indicado). Cuando los tengas, imprime los equipos por consola.*/
+		
+		List<Jugador> listaEquipo1 = new ArrayList <>(); // LISTA EQUIPO 1
+		List <Jugador> listaEquipo2 = new ArrayList <>(); // LISTA EQUIPO 2
+		
+		Equipo equipo1 = new Equipo("Sevilla");
+		Jugador jugador1 = new Jugador ("Vinicius", 7);
+		Jugador jugador2 = new Jugador ("Jhony", 5);
+		Jugador jugador3 = new Jugador ("Juan",1);
+		
+		Equipo equipo2 = new Equipo("Betis");
+		Jugador jugador4 = new Jugador ("Juanma", 8);
+		Jugador jugador5 = new Jugador ("David", 9);
+		Jugador jugador6 = new Jugador ("Gabriel",6);
+		
+		equipo1.setCapitan(jugador1);
+		equipo2.setCapitan(jugador4);
+		
+		listaEquipo1.add(jugador1);
+		listaEquipo1.add(jugador2);
+		listaEquipo1.add(jugador3);
+		
+		listaEquipo2.add(jugador4);
+		listaEquipo2.add(jugador5);
+		listaEquipo2.add(jugador6);
+		
+		equipo1.setListaJugador(listaEquipo1);
+		equipo2.setListaJugador(listaEquipo2);
+		
+		System.out.println(equipo1);
+		System.out.println(equipo2);
+	// 2. Crea un partido para estos dos equipos. Establece el resultado en 0 a 0. Imprime el partido.
+		
+	// 3. Pregunta al usuario por el resultado y cámbialo. Imprime el partido.
+		
+	// 4. Imprime el equipo ganador.
+		
+	// 5. Añade al equipo visitante un jugador con el dorsal 99 y nombre “Blas infiltrado”.	Imprime el equipo visitante.
+		
+	// 6. Cambia el capitán del equipo local para que sea el último jugador de la lista de sus jugadores. Imprime el equipo local. 
+
+	}
+
+}
