@@ -1,59 +1,74 @@
 package tema04.EjBasicos01.Ej41;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class App {
-
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Dime el nombre del primer equipo");
+		String nombreEquipo = scanner.nextLine();
+		Equipo equipo1 = new Equipo(nombreEquipo);
+		cargarJugadores(scanner, equipo1);
+		System.out.println(equipo1);
+		
+		System.out.println("Dime el nombre del segundo equipo");
+		nombreEquipo = scanner.nextLine();
+		Equipo equipo2 = new Equipo(nombreEquipo);
+		cargarJugadores(scanner, equipo2);
+		System.out.println(equipo2);
+		
+		Partido partido = new Partido();
+		partido.setEquipoLocal(equipo1);
+		partido.setEquipoVisitante(equipo2);
+		Resultado resultado = new Resultado(0, 0);
+		partido.setResultado(resultado);
+		System.out.println(partido);
 
-		/*
-		 * 1. Crea dos equipos con al menos 3 jugadores cada uno. Solicitando los datos
-		 * al usuario. Designa al capitán de cada equipo (será el primer jugador
-		 * indicado). Cuando los tengas, imprime los equipos por consola.
-		 */
+		// apartado 3
+		System.out.println("Dime los goles del equipo " + equipo1.getNombre());
+		resultado.setGolesLocales(scanner.nextInt());
+		System.out.println("Dime los goles del equipo " + equipo2.getNombre());
+		resultado.setGolesVisitantes(scanner.nextInt());
+		System.out.println(partido);
+		
+		// apartado 4
+		System.out.println("Equipo ganador: ");
+		System.out.println(partido.getEquipoGanador());
+		
+		// apartado 5
+		Jugador infiltrado = new Jugador("Blas Infiltrado", 99);
+		equipo2.getJugadores().add(infiltrado);
+		System.out.println(equipo2);
 
-		List<Jugador> listaEquipo1 = new ArrayList<>(); // LISTA EQUIPO 1
-		List<Jugador> listaEquipo2 = new ArrayList<>(); // LISTA EQUIPO 2
-
-		System.out.println("Ingrese los nombres de los jugadores para el Equipo 1 (mínimo 3):");
-		for (int i = 0; i < 3; i++) {
-			System.out.print("Jugador " + (i + 1) + ": ");
-			//listaEquipo1.add(sc.nextLine());
-		}
-
-		System.out.println("Ingrese los nombres de los jugadores para el Equipo 2 (mínimo 3):");
-		for (int i = 0; i < 3; i++) {
-			System.out.print("Jugador " + (i + 1) + ": ");
-			// listaEquipo2.add(sc.nextLine());
-		}
-
-		System.out.println("\nEquipos formados:");
-		System.out.println("Equipo 1:");
-		// System.out.println("Capitán: " + equipo1.get(0));
-		// System.out.println("Jugadores: " + equipo1);
-
-		System.out.println("\nEquipo 2:");
-		// System.out.println("Capitán: " + equipo2.get(0));
-		// System.out.println("Jugadores: " + equipo2);
-
-		sc.close();
-
-		// 2. Crea un partido para estos dos equipos. Establece el resultado en 0 a 0.
-		// Imprime el partido.
-
-		// 3. Pregunta al usuario por el resultado y cámbialo. Imprime el partido.
-
-		// 4. Imprime el equipo ganador.
-
-		// 5. Añade al equipo visitante un jugador con el dorsal 99 y nombre “Blas
-		// infiltrado”. Imprime el equipo visitante.
-
-		// 6. Cambia el capitán del equipo local para que sea el último jugador de la
-		// lista de sus jugadores. Imprime el equipo local.
-
+		// apartado 6
+		List<Jugador> jugadoresEquipoLocal = equipo1.getJugadores();
+		Integer tamaoLista = jugadoresEquipoLocal.size();
+		Jugador ultimoJugador = jugadoresEquipoLocal.get(tamaoLista-1);
+		equipo1.setCapitan(ultimoJugador);
+		System.out.println(equipo1);
+		
+		scanner.close();
+		
 	}
 
+	private static void cargarJugadores(Scanner scanner, Equipo equipo) {
+		for (int i = 0; i < 3; i++) {
+			System.out.println("Dime el dorsal del jugador");
+			Integer dorsalJugador = scanner.nextInt();
+			scanner.nextLine();
+			System.out.println("Dime el nombre del jugador");
+			String nombreJugador = scanner.nextLine();
+			
+			Jugador jugador = new Jugador(nombreJugador, dorsalJugador);
+			equipo.getJugadores().add(jugador);
+			
+			/*if (i==0) {
+				equipo.setCapitan(jugador);
+			}*/
+		}
+		equipo.setCapitan(equipo.getJugadores().get(0));
+	}
 }
+
