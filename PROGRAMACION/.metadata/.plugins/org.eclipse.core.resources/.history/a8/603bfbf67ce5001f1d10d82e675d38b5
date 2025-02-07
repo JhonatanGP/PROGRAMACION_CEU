@@ -1,0 +1,43 @@
+package tema04.EjBasicos01.Ej44;
+
+public class Jugador {
+	//01
+	private String nombre;
+	private String equipoCombate;
+	
+	//02
+	public Jugador() {
+		super();
+		this.nombre = nombre;
+		this.equipoCombate = equipoCombate;
+	}
+	//03
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public String getCodigo() {
+		return equipoCombate;
+	}
+	public void setCodigo(String codigo) {
+		this.equipoCombate = codigo;
+	}
+	//04
+	@Override
+	public String toString() {
+		return "Jugador [nombre=" + nombre + ", equipoCombate=" + equipoCombate + "]";
+	}
+	
+
+
+
+	
+	
+	
+	
+
+
+}

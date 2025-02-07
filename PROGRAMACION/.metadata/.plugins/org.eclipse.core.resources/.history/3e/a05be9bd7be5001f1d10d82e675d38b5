@@ -1,0 +1,9 @@
+package tema04.EjBasicos01.Ej44;
+
+import java.util.List;
+
+public class EquipoCombate {
+	// Meter list<Personaje>
+	private List<Personaje> personaje;
+
+}

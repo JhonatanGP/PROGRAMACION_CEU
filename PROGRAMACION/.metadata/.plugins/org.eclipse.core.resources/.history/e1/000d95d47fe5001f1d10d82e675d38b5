@@ -1,0 +1,24 @@
+package tema04.EjBasicos01.Ej44;
+
+public class Parasito extends Personaje{
+
+	public Parasito(String nombre, String codigo) {
+		super(nombre, codigo);
+	}
+
+	@Override
+	public Integer getPuntosVida() {
+		return 200;
+	}
+
+	@Override
+	public Integer getDaño() {
+		return 2;
+	}
+
+	@Override
+	public Integer getDañoPorSegundo() {
+		return 1;
+	}
+
+}

@@ -1,0 +1,60 @@
+package tema04.EjBasicos01.Ej44;
+
+import java.util.Objects;
+
+public class Jugador {
+	//01
+	private String nombre;
+	private String equipoCombate;
+	
+	//02
+	public Jugador() {
+		super();
+		this.nombre = nombre;
+		this.equipoCombate = equipoCombate;
+	}
+	//03
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public String getCodigo() {
+		return equipoCombate;
+	}
+	public void setCodigo(String codigo) {
+		this.equipoCombate = codigo;
+	}
+	//04
+	@Override
+	public String toString() {
+		return "Jugador [nombre=" + nombre + ", equipoCombate=" + equipoCombate + "]";
+	}
+	@Override
+	public int hashCode() {
+		return Objects.hash(equipoCombate, nombre);
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Jugador other = (Jugador) obj;
+		return Objects.equals(equipoCombate, other.equipoCombate) && Objects.equals(nombre, other.nombre);
+	}
+	
+
+
+
+	
+	
+	
+	
+
+
+}
