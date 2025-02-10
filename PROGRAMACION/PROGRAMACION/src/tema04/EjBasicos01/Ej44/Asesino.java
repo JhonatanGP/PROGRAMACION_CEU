@@ -2,8 +2,8 @@ package tema04.EjBasicos01.Ej44;
 
 public class Asesino extends Personaje{
 
-	public Asesino(String nombre, String codigo, Integer puntosVida) {
-		super(nombre, codigo, 100 );//en la clase padre Personaje, el constructor debe tener como minimo nombre y cdigo y sus hijas tmb
+	public Asesino(String nombre, String codigo) {
+		super(nombre, codigo);//en la clase padre Personaje, el constructor debe tener como minimo nombre y cdigo y sus hijas tmb
 	}
 
 	@Override

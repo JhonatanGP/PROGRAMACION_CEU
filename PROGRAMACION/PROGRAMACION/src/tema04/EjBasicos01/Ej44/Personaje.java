@@ -1,5 +1,7 @@
 package tema04.EjBasicos01.Ej44;
 
+import java.util.Objects;
+
 public abstract class Personaje {
 	// 01
 	private String nombre;
@@ -7,7 +9,7 @@ public abstract class Personaje {
 	private Integer puntosVida;
 
 	// 02											// Al ser clase  padre el constructor no puede estar vacio, debe tener 
-	public Personaje(String nombre, String codigo , Integer puntosVida) { // como minimo nombre y codigo, que hereden sus hijas asesino y parasito
+	public Personaje(String nombre, String codigo) { // como minimo nombre y codigo, que hereden sus hijas asesino y parasito
 		super();
 			}
 
@@ -28,7 +30,6 @@ public abstract class Personaje {
 		this.codigo = codigo;
 	}
 	
-
 	public Integer getPuntosVida() {
 		return puntosVida;
 	}
@@ -46,6 +47,24 @@ public abstract class Personaje {
 	public String toString() {
 		return "Personaje [nombre=" + nombre + ", codigo=" + codigo + "]";
 	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(codigo);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Personaje other = (Personaje) obj;
+		return Objects.equals(codigo, other.codigo);
+	}
+	
 	
 
 }

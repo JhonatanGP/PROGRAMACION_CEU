@@ -2,8 +2,8 @@ package tema04.EjBasicos01.Ej44;
 
 public class Parasito extends Personaje{
 
-	public Parasito(String nombre, String codigo, Integer puntosVida) {
-		super(nombre, codigo, 200);//en la clase padre Personaje, el constructor debe tener como minimo nombre y cdigo y sus hijas tmb
+	public Parasito(String nombre, String codigo) {
+		super(nombre, codigo);//en la clase padre Personaje, el constructor debe tener como minimo nombre y cdigo y sus hijas tmb
 	}
 
 	@Override

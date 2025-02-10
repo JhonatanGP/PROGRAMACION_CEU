@@ -1,0 +1,22 @@
+package tema04.EjBasicos01.Ej45;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		LocalDate f = LocalDate.now();
+		DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd//MM/yyyy");
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Dime tu fecha de nacimiento:");
+		String nac = sc.nextLine();
+		LocalDate fecha = LocalDate.parse(nac,formato);
+		//if(nac = ) {
+			
+		//}
+		
+	}
+
+}

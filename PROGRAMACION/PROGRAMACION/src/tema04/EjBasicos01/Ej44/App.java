@@ -1,20 +1,19 @@
 package tema04.EjBasicos01.Ej44;
 
-import java.util.Scanner;
-
 public class App {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		
 		// 1. Crea un jugador que tenga un equipo de combate compuesto por 3 asesinos.
+		Asesino a1 = new Asesino("a1","a1");
+		a1.setNombre("a1");
+		a1.setCodigo("a1");
+		
 		Jugador j1 = new Jugador();
 		j1.setNombre("Player1");
-		j1.setEquipoCombate(null);
 		
 		
 		// 2. Crea un parásito con nombre “Blas” y código “B69”. Muestra cuántos puntos quita al rival y cada cuánto tiempo.
-		Parasito p1 = new Parasito("Blas", "B69", 200);
+		Parasito p1 = new Parasito("Blas", "B69");
 		System.out.println("El parasito " + p1.getNombre() + " con código " + p1.getCodigo()+" quita " + p1.getDaño() +" puntos cada "
 		+ p1.getDañoPorSegundo()+" segundo");
 		// 3. Añade el parásito Blas al jugador.

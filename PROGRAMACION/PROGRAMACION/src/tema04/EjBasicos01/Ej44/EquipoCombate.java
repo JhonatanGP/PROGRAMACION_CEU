@@ -6,6 +6,7 @@ import java.util.Objects;
 
 // 01
 public class EquipoCombate {
+	
 	private List<Personaje> personaje;
 	private Integer totalPuntosVida ;
 	
@@ -17,6 +18,10 @@ public class EquipoCombate {
 	}
 
 // 03
+	public void añadirPersonaje(Personaje personaje) {
+		
+	}
+	
 	public List<Personaje> getPersonaje() {
 		return personaje;
 	}

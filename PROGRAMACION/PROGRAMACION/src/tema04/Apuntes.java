@@ -35,6 +35,11 @@ public class Apuntes {
 		Si se pone Integer se pone equals, si se pone int ==.
 		
 		
+		LocalDate->  fecha sin hora.
+		LocalTime-> hora sin fecha.
+		LocalDateTime-> fecha y hora.
+		
+		
 		
 		
 		
