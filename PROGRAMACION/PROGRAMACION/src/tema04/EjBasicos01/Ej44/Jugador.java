@@ -1,7 +1,5 @@
 package tema04.EjBasicos01.Ej44;
 
-import java.util.Objects;
-
 public class Jugador {
 	//01
 	private String nombre;
@@ -31,12 +29,6 @@ public class Jugador {
 	public String toString() {
 		return "Jugador [nombre=" + nombre + ", equipoCombate=" + equipoCombate + "]";
 	}
-	@Override
-	public int hashCode() {
-		return Objects.hash(equipoCombate);
-	}
-	
-	
 	
 	
 

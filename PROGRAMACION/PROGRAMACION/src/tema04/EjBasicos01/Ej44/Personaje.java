@@ -6,8 +6,8 @@ public abstract class Personaje {
 	private String codigo;
 	private Integer puntosVida;
 
-	// 02
-	public Personaje(String nombre, String codigo) {
+	// 02											// Al ser clase  padre el constructor no puede estar vacio, debe tener 
+	public Personaje(String nombre, String codigo , Integer puntosVida) { // como minimo nombre y codigo, que hereden sus hijas asesino y parasito
 		super();
 			}
 

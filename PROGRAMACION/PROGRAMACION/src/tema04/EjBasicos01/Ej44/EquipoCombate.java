@@ -51,7 +51,13 @@ public class EquipoCombate {
 		EquipoCombate other = (EquipoCombate) obj;
 		return Objects.equals(personaje, other.personaje) && Objects.equals(totalPuntosVida, other.totalPuntosVida);
 	}
+
+	@Override
+	public String toString() {
+		return "EquipoCombate [personaje=" + personaje + ", totalPuntosVida=" + totalPuntosVida + "]";
+	}
 	
+
 
 
 	
