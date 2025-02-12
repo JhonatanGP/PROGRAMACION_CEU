@@ -1,9 +1,0 @@
-package tema04.EjBasicos01.Ejercicio32;
-
-public class Reloj {
-	private int hora;
-	private int minuto;
-	private int segundo;
-
-
-}

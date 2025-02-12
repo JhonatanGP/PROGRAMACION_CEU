@@ -1,0 +1,26 @@
+package tema04.EjBasicos01.Ej47;
+
+public class Libro extends Articulo{
+	
+	private String Autor;
+
+	public Libro(String autor) {
+		super();
+	}
+
+	public String getAutor() {
+		return Autor;
+	}
+
+	@Override
+	public String toString() {
+		return "Libro [Autor=" + Autor + "]";
+	}
+
+	@Override
+	public String detalle() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}
