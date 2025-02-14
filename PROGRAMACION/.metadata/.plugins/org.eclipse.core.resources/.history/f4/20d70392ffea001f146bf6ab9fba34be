@@ -1,0 +1,27 @@
+package tema04.EjBasicos01.Ej47;
+
+public class App {
+
+	public static void main(String[] args) {
+		//1
+		Cliente c1 = new Cliente();
+		c1.setDni("12345678K");
+		c1.setNombre("Blas");
+		
+		//2
+		Carrito car = new Carrito(c1);
+		System.out.println(c1);
+		//3
+		//6
+		car.addArticulo(null);
+		System.out.println(car);
+		//7
+		car.borrarArticulo(null);
+		System.out.println(car);
+		//8
+		System.out.println(car.getPrecioMedio());
+		//9
+		
+	}
+
+}

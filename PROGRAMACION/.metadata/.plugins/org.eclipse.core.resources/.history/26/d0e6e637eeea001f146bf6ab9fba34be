@@ -1,0 +1,29 @@
+package tema04.EjBasicos01.Ej47;
+
+public class Ropa extends Articulo{
+	private String talla;
+	private String color;
+	
+	public Ropa() {
+		super();
+	}
+	
+	public String getTalla() {
+		return talla;
+	}
+	public String getColor() {
+		return color;
+	}
+	@Override
+	public String toString() {
+		return "Ropa [talla=" + talla + ", color=" + color + "]";
+	}
+
+	@Override
+	public String detalle() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+}

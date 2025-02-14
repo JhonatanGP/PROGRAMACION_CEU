@@ -39,8 +39,17 @@ public class Apuntes {
 		LocalTime-> hora sin fecha.
 		LocalDateTime-> fecha y hora.
 		
+		conjunto: 1 En el no se pueden repetir ningun dato. 
+				  2 No tiene orden.	
+		Set<String> conj1 = new HashSet<>();
 		
-		
+		-- Creamos un conj usando la clase LinkedHashSet
+		 Set<String> conj2 = new LinkedHashSet<>();
+		 
+		-- Para añadir o borrar algo al conjunto es igual que en las listas
+		-- Obtener elementos en un set: Como no hay posiciones si meto algo no necesariamente va estar el ultimo
+		-- Recorrer: Solo con FOREACH, ni for normal, ni while, do while ...
+
 		
 		
 		
