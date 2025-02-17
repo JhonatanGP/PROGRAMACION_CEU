@@ -30,7 +30,7 @@ public class App {
 		car.addArticulo(nietzsche);
 		System.out.println(car);
 		// 7
-		car.borrarArticulo(poncho);
+		car.borrarArticulo(1);
 		System.out.println(car);
 		// 8
 		System.out.println(car.getPrecioMedio());

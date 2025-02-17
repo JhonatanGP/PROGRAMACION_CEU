@@ -3,18 +3,14 @@ package tema04.EjBasicos01.Ej48;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class Carrito {
 	// 01
 	private LocalDate fechaCreacion;
 	private LocalDate fechaActualizacion;
 	private Cliente cliente;
-	//private List<Articulo> articulo;
-	private Set<Articulo> articulo;
-
+	private List<Articulo> articulo;
 
 	// 02
 	public Carrito(Cliente cliente) {
@@ -22,7 +18,7 @@ public class Carrito {
 		this.cliente = cliente;
 		this.fechaCreacion = LocalDate.now();
 		this.fechaActualizacion = LocalDate.now();
-		this.articulo = new HashSet<>();
+		this.articulo = new ArrayList<>();
 	}
 
 	// 03
@@ -38,7 +34,7 @@ public class Carrito {
 		return cliente;
 	}
 
-	public Set<Articulo> getArticulo() {
+	public List<Articulo> getArticulo() {
 		return articulo;
 	}
 
@@ -55,11 +51,8 @@ public class Carrito {
 		if (this.articulo.size() < 0) {
 			return 0d;
 		}
-		/*for (int i = 0; i < articulo.size(); i++) {
+		for (int i = 0; i < articulo.size(); i++) {
 			precio += articulo.get(i).getPrecio();
-		}*/
-		for (Articulo articulo : articulo) {
-			precio += articulo.getPrecio();
 		}
 		return precio;
 	}
@@ -69,11 +62,8 @@ public class Carrito {
 		if (getCantidad() == 0) {
 			return 0d;
 		}
-		/*for (int i = 0; i < articulo.size(); i++) { // getTotal()/getCantidad()
+		for (int i = 0; i < articulo.size(); i++) { // getTotal()/getCantidad()
 			precio += articulo.get(i).getPrecio();
-		}*/
-		for (Articulo articulo : articulo) {
-			precio += articulo.getPrecio();
 		}
 		Double media = precio / articulo.size();
 		return media;
@@ -95,7 +85,7 @@ public class Carrito {
 
 	}
 
-	/*public void borrarArticulo(int posicion) { // Integer es null|| int empieza en 0.
+	public void borrarArticulo(int posicion) { // Integer es null|| int empieza en 0.
 		// hay que comprobar si la posicion es correcta:
 
 		if (posicion >= 0 && posicion < this.articulo.size()) // posicion < getCantidad()
@@ -103,10 +93,7 @@ public class Carrito {
 			this.articulo.remove(posicion);
 			this.fechaActualizacion = LocalDate.now();
 		}
-	}*/
-	public void borrarArticulo(Articulo articulo) { // Integer es null|| int empieza en 0.
-			this.articulo.remove(articulo); // posicion < getCantidad()
-			this.fechaActualizacion = LocalDate.now();
+
 	}
 
 	public void vaciarCesta() {

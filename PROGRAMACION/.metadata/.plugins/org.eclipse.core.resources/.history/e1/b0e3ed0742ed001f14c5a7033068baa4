@@ -95,7 +95,7 @@ public class Carrito {
 
 	}
 
-	/*public void borrarArticulo(int posicion) { // Integer es null|| int empieza en 0.
+	public void borrarArticulo(int posicion) { // Integer es null|| int empieza en 0.
 		// hay que comprobar si la posicion es correcta:
 
 		if (posicion >= 0 && posicion < this.articulo.size()) // posicion < getCantidad()
@@ -103,10 +103,7 @@ public class Carrito {
 			this.articulo.remove(posicion);
 			this.fechaActualizacion = LocalDate.now();
 		}
-	}*/
-	public void borrarArticulo(Articulo articulo) { // Integer es null|| int empieza en 0.
-			this.articulo.remove(articulo); // posicion < getCantidad()
-			this.fechaActualizacion = LocalDate.now();
+
 	}
 
 	public void vaciarCesta() {

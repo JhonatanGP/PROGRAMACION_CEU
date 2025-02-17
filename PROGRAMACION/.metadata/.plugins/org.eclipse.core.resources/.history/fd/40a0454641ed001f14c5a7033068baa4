@@ -58,8 +58,8 @@ public class Carrito {
 		/*for (int i = 0; i < articulo.size(); i++) {
 			precio += articulo.get(i).getPrecio();
 		}*/
-		for (Articulo articulo : articulo) {
-			precio += articulo.getPrecio();
+		for (Articulo articulo1 : articulo) {
+			precio += articulo1.getPrecio();
 		}
 		return precio;
 	}
@@ -69,11 +69,8 @@ public class Carrito {
 		if (getCantidad() == 0) {
 			return 0d;
 		}
-		/*for (int i = 0; i < articulo.size(); i++) { // getTotal()/getCantidad()
+		for (int i = 0; i < articulo.size(); i++) { // getTotal()/getCantidad()
 			precio += articulo.get(i).getPrecio();
-		}*/
-		for (Articulo articulo : articulo) {
-			precio += articulo.getPrecio();
 		}
 		Double media = precio / articulo.size();
 		return media;
@@ -95,7 +92,7 @@ public class Carrito {
 
 	}
 
-	/*public void borrarArticulo(int posicion) { // Integer es null|| int empieza en 0.
+	public void borrarArticulo(int posicion) { // Integer es null|| int empieza en 0.
 		// hay que comprobar si la posicion es correcta:
 
 		if (posicion >= 0 && posicion < this.articulo.size()) // posicion < getCantidad()
@@ -103,10 +100,7 @@ public class Carrito {
 			this.articulo.remove(posicion);
 			this.fechaActualizacion = LocalDate.now();
 		}
-	}*/
-	public void borrarArticulo(Articulo articulo) { // Integer es null|| int empieza en 0.
-			this.articulo.remove(articulo); // posicion < getCantidad()
-			this.fechaActualizacion = LocalDate.now();
+
 	}
 
 	public void vaciarCesta() {
