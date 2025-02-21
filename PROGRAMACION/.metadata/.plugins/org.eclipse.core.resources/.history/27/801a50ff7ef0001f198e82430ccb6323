@@ -17,7 +17,7 @@ public class App {
 		c. CK / Islas Caimán*/
 		Pais p1 = new Pais("ES", "España");
 		Pais p2 = new Pais("CK", "Islas Cook");
-		Pais p3 = new Pais("CK", "Islas Caiman");
+		Pais p3 = new Pais("CK", "Caiman");
 		
 	// 3. Añade los 3 países al conjunto e imprímelo (Deberían aparecer 2. ¿Sabes por qué?)
 		conj.add(p1);
@@ -45,4 +45,5 @@ public class App {
         conj.clear();
         System.out.println(conj);
 	}
+
 }
