@@ -50,7 +50,8 @@ public class Apuntes {
 		-- Obtener elementos en un set: Como no hay posiciones si meto algo no necesariamente va estar el ultimo
 		-- Recorrer: Solo con FOREACH, ni for normal, ni while, do while ...
 
-		
+		BigDecimal se compara con compareTo
+		add es el que suma en BigDecimal
 		
 		
 		

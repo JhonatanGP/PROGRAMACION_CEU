@@ -1,0 +1,23 @@
+package tema04.EjBasicos01.Ej53;
+
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
+public class Hucha {
+	//01
+	private BigDecimal dinero = BigDecimal.ZERO;
+	
+	//02
+	public Hucha(BigDecimal dinero) {
+		super();
+		this.dinero = BigDecimal.ZERO.setScale(2, RoundingMode.HALF_DOWN);
+
+	}
+	//03
+	
+	//04
+
+	
+	
+	
+}
