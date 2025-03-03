@@ -1,0 +1,21 @@
+package tema04.EjRepaso.Ej01;
+
+import java.time.LocalDate;
+
+public class Smartphone {
+	private String marca;
+	private String modelo;
+	private String imei;
+	private Double precio;
+	private LocalDate fechaFabricacion;
+	private Boolean activo;
+	
+	
+
+	
+
+
+
+	
+
+}
