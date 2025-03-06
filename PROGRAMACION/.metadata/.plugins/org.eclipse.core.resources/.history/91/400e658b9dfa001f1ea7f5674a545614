@@ -1,0 +1,11 @@
+package tema04.EjRepaso.Ej4;
+
+public class Libro {
+	
+	private String titulo;
+	private String autor;
+	private LocalDate fechaEdicion;
+	private Integer peso;
+
+
+}

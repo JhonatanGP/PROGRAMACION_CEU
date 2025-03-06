@@ -1,0 +1,10 @@
+package tema04.EjRepaso.Ej02;
+
+public class Movil extends Telefono{
+
+	public Movil(Integer numero) {
+		super(numero);
+		// TODO Auto-generated constructor stub
+	}
+
+}

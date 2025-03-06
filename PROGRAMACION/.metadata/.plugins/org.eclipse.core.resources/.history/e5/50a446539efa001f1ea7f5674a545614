@@ -1,0 +1,22 @@
+package tema04.EjRepaso.Ej4;
+
+import java.time.LocalDate;
+
+public class Libro {
+	
+	private String titulo;
+	private String autor;
+	private LocalDate fechaEdicion;
+	private Integer pagina;
+	
+	public Libro(String titulo, String autor, LocalDate fechaEdicion, Integer pagina) {
+		super();
+		this.titulo = titulo;
+		this.autor = autor;
+		this.fechaEdicion = fechaEdicion;
+		this.pagina = pagina;
+	}
+	
+
+
+}
