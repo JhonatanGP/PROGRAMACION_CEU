@@ -74,7 +74,7 @@ public class Curso {
 	/*Método getDuracionCurso() que devuelve el número de meses que dura el curso */
 	public Integer getDuracionCurso() {
 		Period periodo = fechaInicio.until(fechaFin); 
-		return periodo.getMonths();
+		return periodo.getMonths() + periodo.getYears()*12;
 	}
 	
 	/* Método isPlazasLibres() que devuelve un booleano indicando si hay o no plazas libres*/
