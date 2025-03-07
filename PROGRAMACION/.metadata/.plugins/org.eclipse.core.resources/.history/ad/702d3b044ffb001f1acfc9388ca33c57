@@ -1,0 +1,18 @@
+package tema04.EjRepasoEj7;
+
+import java.util.List;
+
+public class Academia {
+	//01
+	private String ciudad;
+	private Integer telefono;
+	private List<Curso> lista;
+		
+	//02
+	public Academia() {
+		
+	}
+	
+
+
+}

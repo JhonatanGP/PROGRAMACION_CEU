@@ -53,6 +53,8 @@ public class Apuntes {
 		BigDecimal se compara con compareTo
 		add es el que suma en BigDecimal
 		
+		-- MAPAS
+		Para recorrer un map, encontrar KEY: this.mapa.containsKey(key);
 		
 		
 		
