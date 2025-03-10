@@ -4,6 +4,10 @@
     <fullyQualifiedTypeName name="tema04.EjBasicos01.Ej09.ArraysUtils"/>
     <fullyQualifiedTypeName name="tema04.EjBasicos01.Ej19.Alumno"/>
     <fullyQualifiedTypeName name="tema04.EjBasicos01.Ej29.Persona"/>
-    <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
     <fullyQualifiedTypeName name="java.time.Month"/>
+    <fullyQualifiedTypeName name="java.math.RoundingMode"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.math.BigDecimal"/>
+    <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+    <fullyQualifiedTypeName name="ExAvion.Asiento"/>
 </qualifiedTypeNameHistroy>

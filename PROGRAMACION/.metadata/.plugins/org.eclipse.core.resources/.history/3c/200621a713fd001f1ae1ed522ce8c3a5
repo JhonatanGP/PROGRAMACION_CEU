@@ -1,0 +1,9 @@
+package ExAvion;
+
+public class Normal extends Asiento{
+
+	public Normal(Integer fila, String letra) {
+		super(fila, letra);
+	}
+
+}

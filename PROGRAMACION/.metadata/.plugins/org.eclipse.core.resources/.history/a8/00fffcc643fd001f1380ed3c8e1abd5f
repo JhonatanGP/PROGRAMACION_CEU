@@ -1,0 +1,36 @@
+package ExAvion;
+
+import java.time.LocalDate;
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String comp;
+		do {
+			System.out.println("Ingrese el nombre de la compañía:");
+			comp = sc.nextLine().toUpperCase().trim();
+			if(comp.isBlank()||comp.isEmpty()) {
+				System.out.println("ERROR");
+			}
+		} while(comp.isBlank()||comp.isEmpty());
+		
+		Avion avion = new Avion(comp);
+		System.out.println(comp);
+		
+		avion.setFechaFab(LocalDate.of(2015,11,23));
+		System.out.println(avion.getFechaFab());
+		
+		//Asiento a1 = new Asiento(15,"a");
+		Normal aN1 = new Normal(15,"a");
+		aN1.setOcupado(true);
+		Normal aN2 = new Normal(15,"b");
+		Primera aP1 = new Primera(1,"a");
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+package ExAvion;
+
+import java.math.BigDecimal;
+
+public class Asiento {
+	private Integer fila;
+	private String letra;
+	private Boolean ocupado;
+	private BigDecimal precio;
+	
+	
+	
+
+}

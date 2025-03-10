@@ -1,0 +1,16 @@
+package ExAvion;
+
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String comp;
+		do {
+			System.out.println("Ingrese el nombre de la compañía:");
+			comp = sc.nextLine();
+		} while(comp.isBlank()||comp.isEmpty());
+	}
+
+}

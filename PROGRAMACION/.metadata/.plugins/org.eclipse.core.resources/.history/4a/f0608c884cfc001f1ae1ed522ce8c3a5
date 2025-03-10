@@ -1,0 +1,33 @@
+package Examen2;
+
+import java.time.LocalDate;
+import java.time.Period;
+import java.util.List;
+
+public class Agenda {
+//01
+	private String medico;
+	private List<Cita> lista;
+//02
+	public Agenda(String medico) {
+		super();
+		this.medico = medico;
+	}
+//03
+	public String getMedico() {
+		return medico;
+	}
+	public void setMedico(String medico) {
+		this.medico = medico;
+	}
+//04
+	public void addCita(Cita cita) {
+		if(!lista.contains(cita)) {
+			lista.add(cita);
+		}		
+		
+	}
+	
+	
+
+}

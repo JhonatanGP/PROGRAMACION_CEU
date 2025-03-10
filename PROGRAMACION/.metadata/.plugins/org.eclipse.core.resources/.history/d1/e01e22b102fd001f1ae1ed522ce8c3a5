@@ -1,0 +1,25 @@
+package tema04.EjBasicos01.Ej33;
+
+public class App {
+
+	public static void main(String[] args) {
+// 1. Crea un Semáforo.
+		
+// 2. Cambia el color a un color incorrecto.
+		
+// 3. Cambia el color a verde.
+		
+// 4. Pon el atributo parpadeando a cierto.
+		
+// 5. Cambia el color a ámbar.
+		
+// 6. Pon el atributo parpadeando a cierto.
+		
+// 7. Llama 5 veces al método cambiarEstado (usando un bucle)
+		
+// 8. Crea un nuevo semáforo que sea copia del anterior.
+		
+
+	}
+
+}

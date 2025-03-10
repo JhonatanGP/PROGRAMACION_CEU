@@ -1,0 +1,36 @@
+package Examen2;
+
+import java.time.LocalDate;
+
+public class Cita {
+	//01
+	private LocalDate fecha;
+	private Integer hora;
+	private String nombre;
+	private Boolean seguroMedico;	
+	private Boolean facturada;
+	private CitaRevision numero;
+	
+	//02
+	public Cita(String nombre) {
+		super();
+		this.nombre = nombre;
+		this.seguroMedico = false;
+		this.facturada = false;
+	}
+	public Cita(LocalDate fecha, Integer hora, String nombre, Boolean seguroMedico) {
+		super();
+		if(seguroMedico == true) {
+			this.fecha = fecha;
+			this.hora = hora;
+			this.nombre = nombre;
+			this.seguroMedico = seguroMedico;
+		}		
+		this.facturada = false;
+	}
+
+
+	
+	
+
+}

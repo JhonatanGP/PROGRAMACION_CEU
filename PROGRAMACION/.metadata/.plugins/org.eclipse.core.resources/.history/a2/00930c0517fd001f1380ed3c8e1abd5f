@@ -1,0 +1,60 @@
+package ExAvion;
+
+import java.math.BigDecimal;
+
+public abstract class Asiento {
+//01
+	private Integer fila;
+	private String letra;
+	private Boolean ocupado;
+	private BigDecimal precio;
+//02
+	public Asiento(Integer fila, String letra) {
+		super();
+		this.fila = fila;
+		this.letra = letra.toUpperCase();
+		this.ocupado = false;
+	}
+//03
+	public Integer getFila() {
+		return fila;
+	}
+	public void setFila(Integer fila) {
+		this.fila = fila;
+	}
+	public String getLetra() {
+		return letra;
+	}
+	public void setLetra(String letra) {
+		this.letra = letra;
+	}
+	public Boolean getOcupado() {
+		return ocupado;
+	}
+	public void setOcupado(Boolean ocupado) {
+		this.ocupado = ocupado;
+	}
+	public BigDecimal getPrecio() {
+		return precio;
+	}
+	public void setPrecio(BigDecimal precio) {
+		this.precio = precio;
+	}
+//04
+	public abstract BigDecimal getPrecioVenta();
+	@Override
+	public String toString() {
+		if(ocupado==false) {
+			return "FILA/ASIENTO: " + fila + letra + "PVP: " + precio + "€" + "LIBRE";
+		}
+		 return "FILA/ASIENTO: " + fila + letra + "PVP: " + precio + "€" + "OCUPADO";;
+	}
+		
+
+	
+
+	
+	
+	
+
+}

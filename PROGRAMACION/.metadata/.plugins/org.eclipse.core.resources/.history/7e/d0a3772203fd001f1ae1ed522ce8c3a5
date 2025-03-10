@@ -1,0 +1,37 @@
+package tema04.EjBasicos01.Ej33.copy;
+
+public class App {
+
+	public static void main(String[] args) {
+// 1. Crea un Semáforo.
+		Semaforo s = new Semaforo();
+		
+// 2. Cambia el color a un color incorrecto.
+		s.setColor("blanco");
+		System.out.println(s.getColor());
+// 3. Cambia el color a verde.
+		s.setColor("VERDE");
+		System.out.println(s.getColor());
+// 4. Pon el atributo parpadeando a cierto.
+		s.setParpadeando(true);
+		System.out.println(s.getParpadeando());
+// 5. Cambia el color a ámbar.
+		s.setColor("AMBAR");
+		System.out.println(s.getColor());
+// 6. Pon el atributo parpadeando a cierto.
+		s.setParpadeando(true);
+		System.out.println(s.getParpadeando());
+// 7. Llama 5 veces al método cambiarEstado (usando un bucle)
+		for (int i = 0; i < 5; i++) {
+			s.cambiarEstado();
+			System.out.println(s.toString());
+		}
+// 8. Crea un nuevo semáforo que sea copia del anterior.
+		Semaforo s2 = new Semaforo();
+		s2.setColor(s.getColor());
+		s2.setParpadeando(s.getParpadeando());
+		System.out.println(s2);
+
+	}
+
+}

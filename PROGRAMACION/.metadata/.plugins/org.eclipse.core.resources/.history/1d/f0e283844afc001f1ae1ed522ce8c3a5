@@ -1,0 +1,35 @@
+package Examen2;
+
+import java.time.LocalDate;
+import java.time.Period;
+import java.util.List;
+
+public class Agenda {
+//01
+	private String medico;
+	private List<Cita> lista;
+//02
+	public Agenda(String medico) {
+		super();
+		this.medico = medico;
+	}
+//03
+	public String getMedico() {
+		return medico;
+	}
+	public void setMedico(String medico) {
+		this.medico = medico;
+	}
+//04
+	public Integer getDiasHastaCita() {
+		LocalDate fechaHoy = LocalDate.now();
+		for (Cita cita : lista) {
+			Period period = cita.getFecha().until(fechaHoy);
+			if(cita.getFecha().isAfter(fechaHoy)) { // si la cita es desp de hoy, no ha pasado
+				return period.getDays();
+			}
+		}return -1;
+		
+	}
+
+}

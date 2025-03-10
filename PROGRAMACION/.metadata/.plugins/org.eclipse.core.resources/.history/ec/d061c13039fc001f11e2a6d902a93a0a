@@ -1,0 +1,16 @@
+package Examen2;
+
+import java.time.LocalDate;
+
+public class Cita {
+	private LocalDate fecha;
+	private Integer hora;
+	private String nombre;
+	private Boolean seguroMedico;	
+	private Boolean facturada;
+	
+
+	
+	
+
+}
