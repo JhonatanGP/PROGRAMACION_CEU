@@ -1,0 +1,15 @@
+package ExTren;
+
+public class TrenCerca extends Tren{
+
+	public TrenCerca(String ciudad, Integer capacidad) {
+		super(ciudad, capacidad);
+	}
+
+	@Override
+	public Integer getVelocidad() {
+		
+		return 120;
+	}
+
+}

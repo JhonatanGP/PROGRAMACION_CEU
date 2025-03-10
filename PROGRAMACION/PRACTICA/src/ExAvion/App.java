@@ -5,7 +5,6 @@ import java.time.LocalDate;
 import java.util.Scanner;
 
 public class App {
-
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String comp;
@@ -21,8 +20,6 @@ public class App {
 		System.out.println(comp);
 
 		avion.setFechaFab(LocalDate.of(2015, 11, 23));
-
-		// Asiento a1 = new Asiento(15,"a");
 		Normal aN1 = new Normal(15, "a");
 		aN1.setOcupado(true);
 		Normal aN2 = new Normal(15, "b");
@@ -40,7 +37,6 @@ public class App {
 				System.err.println("Debe ser mayor a 100");
 			}
 		} while (precioB.compareTo(new BigDecimal(100)) <= 0);
-		
 		avion.establecerPrecioBaseAsiento(precioB);
 		System.out.println("Avión: " + avion.toString());
 		System.out.println("Años de antiguedad del avión:" + avion.getAntiguedad());

@@ -1,0 +1,17 @@
+package ExTren;
+
+import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.util.List;
+
+public class Tren {
+	private String ciudad;
+	private Integer capacidad;
+	private BigDecimal precio;
+	private LocalDate fechaFab;
+	private Integer horaSalida;
+	private List<Pasajero> listaPas;
+	
+
+
+}

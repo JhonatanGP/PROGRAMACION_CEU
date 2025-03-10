@@ -1,0 +1,16 @@
+package ExTren;
+
+import java.time.LocalDate;
+
+public class App {
+
+	public static void main(String[] args) {
+//01 Creo los objetos
+		Pasajero p1 = new Pasajero();
+		p1.setDni("8765432r");
+		p1.setNombre("Sofía García Molina");
+		p1.setFechaNac(LocalDate.of(1951, 2, 13));
+		
+	}
+
+}

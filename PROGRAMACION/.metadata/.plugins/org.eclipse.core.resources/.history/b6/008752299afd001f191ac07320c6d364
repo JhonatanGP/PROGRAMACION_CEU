@@ -1,0 +1,16 @@
+package ExTren;
+
+public class TrenAlta extends Tren {
+
+	public TrenAlta(String ciudad, Integer capacidad) {
+		super(ciudad, capacidad);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public Integer getVelocidad() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

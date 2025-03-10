@@ -1,0 +1,25 @@
+package ExTren;
+
+public class TrenRegional extends Tren{
+	
+	private Boolean electrico;
+
+	public TrenRegional(String ciudad, Integer capacidad) {
+		super(ciudad, capacidad);
+	}
+
+	@Override
+	public Integer getVelocidad() {
+		if(electrico==true) {
+			return 200;
+		}
+		return 150;
+	}
+
+	@Override
+	public Integer getCapacidadTotal() {
+		return this.getCapacidad();
+	}
+	
+
+}

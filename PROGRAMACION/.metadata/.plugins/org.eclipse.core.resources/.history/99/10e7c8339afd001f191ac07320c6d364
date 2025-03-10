@@ -1,0 +1,16 @@
+package ExTren;
+
+public class TrenRegional extends Tren{
+
+	public TrenRegional(String ciudad, Integer capacidad) {
+		super(ciudad, capacidad);
+	}
+
+	@Override
+	public Integer getVelocidad() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+
+}

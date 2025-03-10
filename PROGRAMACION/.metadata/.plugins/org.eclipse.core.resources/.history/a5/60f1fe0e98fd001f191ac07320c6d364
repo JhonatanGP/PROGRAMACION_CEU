@@ -1,0 +1,17 @@
+package ExTren;
+
+import java.time.LocalDate;
+
+public class Pasajero {
+	private String dni;
+	private String nombre;
+	private LocalDate fechaNac;
+	
+	public Pasajero() {
+		
+	}
+	
+	
+
+
+}

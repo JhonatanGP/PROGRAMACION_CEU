@@ -1,95 +1,85 @@
 package tema04.EjRepaso.Ej01;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
-import java.time.Month;
 import java.time.Period;
 
 public class Smartphone {
+//01
 	private String marca;
 	private String modelo;
 	private String imei;
-	private Double precio;
-	private LocalDate fechaFabricacion;
+	private BigDecimal precio;
+	private LocalDate fechaFab;
 	private Boolean activo;
-	
-	
+
+//02
 	public Smartphone() {
-		super();
-		this.precio = 0D;
-		this.activo = true;
-		}
-	
-	public Smartphone(String imei) {
-		super();
-		this.imei = imei;
-		this.precio = 0D;
-		this.activo = true;
-	}
-	public Smartphone(String marca, String modelo, String imei) {
-		super();
-		this.marca = marca;
-		this.modelo = modelo;
-		this.imei = imei;
-		this.precio = 0D;
+		this.precio = BigDecimal.ZERO;
 		this.activo = true;
 	}
 
-	public void setPrecio(Double precio) {
+	public Smartphone(String imei) {
+		this.imei = imei;
+		this.precio = BigDecimal.ZERO;
+		this.activo = true;
+	}
+
+	public Smartphone(String marca, String modelo, String imei) {
+		this.marca = marca;
+		this.modelo = modelo;
+		this.imei = imei;
+		this.precio = BigDecimal.ZERO;
+		this.activo = true;
+	}
+
+//03
+	public void setPrecio(BigDecimal precio) {// cambia el precio del Smartphone
 		this.precio = precio;
 	}
 
-	public Boolean activar(Boolean activo){
+//04
+	public void activar() {// activa el Smartphone
 		this.activo = true;
-		return activo; 
 	}
-	
-	public Boolean desactivar(Boolean activo){
+
+	public void desactivar() { // desactiva el Smartphone
 		this.activo = false;
-		return activo; 
 	}
-	public Integer getEdad(LocalDate a){
-		LocalDate fecha = LocalDate.now() ;
-		LocalDate fechaAnterior = LocalDate.of(2000,Month.APRIL,1);
-		
-		Period p = fechaAnterior.until(fecha);
-		Integer añosDif = p.getYears();
-		return añosDif; 
+
+	// devuelve los años entre el 1 de abril del 2000 y la fecha de fabricación del Smartphone
+	public Integer getEdad() {
+		LocalDate fecha = LocalDate.of(2000, 4, 1);
+		Period p = fecha.until(fechaFab);
+		return p.getYears();
 	}
-	public void cambiarModelo(String marca, String modelo) {
+	// recibe una marca y modelo para cambiar los del Smartphone
+	public void cambiarMarcaModelo(String marca, String modelo) {
 		this.marca = marca;
 		this.modelo = modelo;
 	}
+	// recibe y cambia la fecha de fabricación del Smartphone
 	public void establecerFabricacion(LocalDate fecha) {
-		this.fechaFabricacion = fecha; // ver desp return fecha;
+		this.fechaFab = fecha;
 	}
-	public Double getPrecioMasIva() {
-		Double iva = 0.21d;
-		this.precio = (precio * iva) + precio;
+	// devuelve el precio del Smartphone sumándole el IVA (21%)
+	public BigDecimal getPrecioMasIva() {
+		BigDecimal precio = BigDecimal.ZERO;
+		precio = precio.add(precio.multiply(new BigDecimal(0.21)));
 		return precio;
 	}
-	public Boolean isAltaGama(Double precioBase) {
-		//alta gama
-		if(this.precio > precioBase) {
-			return true;
-		}
-		// baja
-		return false;
-	}
-	public Boolean isDatosCompletos() {
-		if (!(this.imei.isBlank() || this.imei.isEmpty() || this.precio == null)) {
-			return true;
-		}
-		return false;
-	}
-	public void isGratis() {
-		return;
-				
-	}
-
+	// isAltaGama() recibe un precio base y devolverá un booleano indicando si el Smartphone es de alta gama o no. 
+	//Los Smartphone de alta gama son aquellos cuyo precio es mayor al precio base recibido
 	
-
-
-
+	// isDatosCompletos() devuelve un booleano indicando si los datos del Smartphone están completos. Para que lo estén,
+	//al menos el imai debe no estar vacío ni contener sólo espacios en blanco, y el precio no puede ser null.
 	
+	// isGratis() devuelve si el precio del Smartphone es o no es 0 euros.
+	
+	// rebajar() modifica el precio del Smartphone restándole 10 euros.
+	
+	//toString() sobrescribe el método toString de Object. Debe devolver una cadena con el formato “marca (modelo)”. 
+	//Si el Smartphone además está inactivo, la cadena será así “marca (modelo) – INACTIVO”. 
+
 
 }

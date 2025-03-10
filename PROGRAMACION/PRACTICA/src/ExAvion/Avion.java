@@ -58,7 +58,6 @@ public class Avion {
 		Period p = this.fechaFab.until(hoy);
 		return p.getYears();
 	}
-
 	public Integer getCantidadAsientosOcupados() {
 		Integer contador = 0;
 		for (Asiento asiento : lista) {
@@ -68,7 +67,6 @@ public class Avion {
 		}
 		return contador;
 	}
-
 	public List<Asiento> getListaAsientoLibres() {// Creo otra lista en la que guardo los que esten libres
 		List<Asiento> libre = new ArrayList<>();
 		for (Asiento asiento : lista) {
@@ -84,7 +82,6 @@ public class Avion {
 			asiento.setPrecio(precioBase);
 		}
 	}
-
 	public BigDecimal getPrecioMedioVenta() {
 		BigDecimal total = BigDecimal.ZERO;
 		for (Asiento asiento : lista) {
