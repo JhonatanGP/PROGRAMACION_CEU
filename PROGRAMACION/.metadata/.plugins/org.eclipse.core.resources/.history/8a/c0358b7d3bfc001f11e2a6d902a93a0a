@@ -1,8 +1,0 @@
-package Examen2;
-
-public class CitaRevision {
-	private Integer numRevision;
-	
-
-
-}

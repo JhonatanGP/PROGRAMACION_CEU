@@ -1,6 +1,0 @@
-package ExTren;
-
-public class TrenRegional extends Tren{
-	
-
-}

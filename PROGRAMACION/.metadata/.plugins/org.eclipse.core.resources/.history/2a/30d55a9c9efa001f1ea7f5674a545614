@@ -1,5 +1,0 @@
-package tema04.EjRepaso.Ej4;
-
-public class Normal extends Libro{
-
-}

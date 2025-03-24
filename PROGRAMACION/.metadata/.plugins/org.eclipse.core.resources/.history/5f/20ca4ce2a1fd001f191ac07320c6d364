@@ -1,9 +1,0 @@
-package ExTren;
-
-import java.util.List;
-
-public class Estacion {
-	private String nombre;
-	private List<Tren> listaTren;
-
-}
