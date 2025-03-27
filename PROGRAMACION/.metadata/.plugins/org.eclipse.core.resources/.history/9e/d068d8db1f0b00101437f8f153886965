@@ -1,0 +1,37 @@
+package tema04.EjBasicos01.Ej57;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.Set;
+import java.util.Map.Entry;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		
+		Map<String,List<String>> mapa = new HashMap<>();
+		String palabra ;
+		
+		while (true) {
+			System.out.println("Escribe palabras: ");
+			String palabras = scanner.nextLine();
+			if (palabras.equals("FIN") || palabras.equals("fin")) {
+				System.out.println("FIN de programa: ");
+				break;
+			}
+			String letra = palabras.substring(0, 1).toUpperCase();
+			if (!mapa.containsKey(letra)) {
+				mapa.put(letra, new ArrayList<>());
+			}
+			mapa.get(letra).add(palabras);
+		}
+				
+		
+	}
+
+}

@@ -103,8 +103,8 @@ public class Apuntes {
 	}
  
  
-	Set<Entry<String,Alumno>> pares = mpa.entrySet(); 
-   	for(Entry<String,Alumno>> par : pares){
+	Set<Entry<String,Alumno>> pares = mapa.entrySet(); 
+   	for(Entry<String,Alumno> par : pares){
 		syso("Clave:" + par.getKey());
 		syso("Valor:" + par.getValue());
 	}

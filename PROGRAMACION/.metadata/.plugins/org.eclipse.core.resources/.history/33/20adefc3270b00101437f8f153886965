@@ -1,0 +1,30 @@
+package tema04.EjBasicos01.Ej58;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class Diccionario {
+	private Map<String, List<String>> mapa = new HashMap<>();
+
+	public Diccionario(Map<String, List<String>> mapa) {
+		super();
+		this.mapa = mapa;
+	}
+
+	public Map<String, List<String>> getMapa() {
+		return mapa;
+	}
+
+	public void setMapa(Map<String, List<String>> mapa) {
+		this.mapa = mapa;
+	}
+	
+	public void cargarDiccionario() {
+		
+	}
+	
+	
+
+
+}

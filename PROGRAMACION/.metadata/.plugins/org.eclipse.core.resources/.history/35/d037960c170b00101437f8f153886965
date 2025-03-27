@@ -1,0 +1,10 @@
+package tema04.EjBasicos01.Ej56;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		
+	}
+
+}
