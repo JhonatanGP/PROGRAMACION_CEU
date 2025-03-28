@@ -108,7 +108,8 @@ public class Apuntes {
 		syso("Clave:" + par.getKey());
 		syso("Valor:" + par.getValue());
 	}
-		
+	
+	****************************** Tema 5 - Excepciones *******************************
 		
 		
 		
