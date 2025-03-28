@@ -2,17 +2,13 @@ package tema04.EjBasicos01.Ej58;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Set;
 
 public class Diccionario {
 	private Map<String, List<String>> mapa;
 
-	public Diccionario(Map<String, List<String>> mapa) {
-		super();
+	public Diccionario() {
 		this.mapa = new HashMap<>();
 	}
 
@@ -23,30 +19,41 @@ public class Diccionario {
 	public void setMapa(Map<String, List<String>> mapa) {
 		this.mapa = mapa;
 	}
-	
-	public void cargarDiccionario(List<String> mapa1) {
-		for (String string : mapa1) {
-			String letra = string.substring(0, 1).toUpperCase();
-			if (!mapa.containsKey(letra)) {
-				mapa.put(letra, new ArrayList<>());
+
+	public void cargarDiccionario(List<String> palabras) {
+		if (palabras != null) {
+
+			for (String palabra : palabras) {
+				// Primera letra
+				String inicial = palabra.substring(0, 1);
+				inicial = inicial.toUpperCase();
+
+				if (mapa.containsKey(inicial)) {
+					mapa.get(inicial).add(palabra);
+				} else {
+					List<String> lista = new ArrayList<>();
+					lista.add(palabra);
+					mapa.put(inicial, lista);
+				}
 			}
-			mapa.get(letra).add(string);
 		}
 	}
-	
+
 	public void borrarDiccionario() {
 		this.mapa.clear();
 	}
-	
+
 	public void imprimirPalabras(String letra) {
-		if(letra != null) {
-			 List<String> m = mapa.get(letra) ; 
-			 
+		if (letra != null) {
+			List<String> lista = mapa.get(letra.toUpperCase());
+			if (lista == null) {
+				System.out.println("No hay palabras que empiezan por " + letra);
+			} else {
+				System.out.println("Hay " + lista.size() + " palabras que empiezan por " + letra);
+				for (String palabra : lista) {
+					System.out.println("\t> " + palabra);
+				}
+			}
 		}
-	   	
 	}
-	
-	
-
-
 }
