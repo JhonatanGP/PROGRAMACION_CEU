@@ -1,0 +1,17 @@
+package tema05.EjerciciosBasicos.Ej03;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class SacoNumeros {
+	private List<Integer> numeros ;
+
+	public SacoNumeros(List<Integer> numeros) {
+		super();
+		this.numeros = new ArrayList<>();
+	}
+	
+	
+
+
+}

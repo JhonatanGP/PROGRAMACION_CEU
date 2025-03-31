@@ -133,7 +133,7 @@ la suma total de caracteres de todos los nombres de los países entre la cantida
 /*9. mismaLetra: No recibe nada. Imprime las entradas del mapa cuyo nombre y su capital comiencen por la misma letra. 
  * Si no hay ninguna, imprimirá: no hay ningún país y capital que comiencen por la misma letra. */
 	public void mismaLetra() {
-		boolean
+		
 	
 }
 
