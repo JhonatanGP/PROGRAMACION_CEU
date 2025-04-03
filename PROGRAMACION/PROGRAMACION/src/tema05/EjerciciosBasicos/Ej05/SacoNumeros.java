@@ -1,6 +1,7 @@
 package tema05.EjerciciosBasicos.Ej05;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,13 +30,23 @@ public class SacoNumeros {
 	}
 	
 	public BigDecimal division() {
-		for (int i = 0; i < numeros.size(); i++) {
-			for (int j = 0; j < numeros.size(); j++) {
-				this.numeros.get(i).divide();
+		try {
+			BigDecimal resultado = new BigDecimal(numeros.get(0));
+			for (int i = 1; i < numeros.size(); i++) {
+				BigDecimal siguiente = new BigDecimal(numeros.get(i));
+				resultado = resultado.divide(siguiente,2,RoundingMode.HALF_UP);
 			}
-			
+			return resultado;
 		}
-		return ;
+		catch(ArithmeticException e) {
+			return BigDecimal.ZERO;
+		}
+		catch(IndexOutOfBoundsException e) {
+			return BigDecimal.ZERO;
+		}
+		finally {
+			System.out.println("Division completa");
+		}
 	}
 
 	@Override

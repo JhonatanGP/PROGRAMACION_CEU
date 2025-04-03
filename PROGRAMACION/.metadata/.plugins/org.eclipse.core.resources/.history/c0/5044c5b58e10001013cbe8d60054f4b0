@@ -1,0 +1,10 @@
+package tema05.EjerciciosBasicos.Ej06;
+
+import java.math.BigDecimal;
+
+public class Persona {
+	private String genero;
+	private BigDecimal altura;
+	
+
+}

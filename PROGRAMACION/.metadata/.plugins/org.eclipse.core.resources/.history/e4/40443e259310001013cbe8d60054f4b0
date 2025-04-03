@@ -1,0 +1,26 @@
+package tema05.EjerciciosBasicos.Ej06;
+
+import java.math.BigDecimal;
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner (System.in);
+		Persona persona = new Persona();
+
+		
+
+        System.out.println("Introduce la altura en metros: ");
+        BigDecimal altura;
+        
+        try {
+        	System.out.println("Introduce el género (H/M): ");
+            String genero = sc.nextLine();
+        }
+        catch;
+
+	}
+
+}

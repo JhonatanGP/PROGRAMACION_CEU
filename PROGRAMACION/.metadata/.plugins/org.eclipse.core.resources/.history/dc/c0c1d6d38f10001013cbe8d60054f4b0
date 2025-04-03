@@ -1,0 +1,41 @@
+package tema05.EjerciciosBasicos.Ej06;
+
+import java.math.BigDecimal;
+
+public class Persona {
+//01
+	private String genero;
+	private BigDecimal altura;
+//02
+	public Persona() {
+
+	}
+//03
+
+	public String getGenero() {
+		return genero;
+	}
+
+	public void setGenero(String genero) throws ParametroIncorrectoException {
+		this.genero = genero.toUpperCase();
+		if(!genero.equals("H") && !genero.equals("M")) {
+			throw new ParametroIncorrectoException("El género tiene que ser ");
+		}
+	} 
+
+	public BigDecimal getAltura() {
+		return altura;
+	}
+
+	public void setAltura(BigDecimal altura) {
+		this.altura = altura;
+	}
+//04
+	@Override
+	public String toString() {
+		return "Persona [genero=" + genero + ", altura=" + altura + "]";
+	}
+	
+
+
+}

@@ -1,0 +1,9 @@
+package tema05.EjerciciosBasicos.Ej07;
+
+public class Sociedad {
+
+	public Sociedad() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
