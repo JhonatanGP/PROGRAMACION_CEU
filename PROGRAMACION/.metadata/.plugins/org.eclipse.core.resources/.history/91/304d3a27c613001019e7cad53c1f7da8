@@ -1,0 +1,16 @@
+package tema06.EjBasicos.Ej01.servicios;
+
+public class PersonasService {
+
+	private OpenConnection openConn;
+	
+	public PersonasService() {
+		openConn = new OpenConnection();
+		System.out.println("Conexión establecida.");
+	}
+	
+	public void consultarPersona() {
+		
+	}
+	
+}

@@ -10,4 +10,5 @@
     <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="java.math.RoundingMode"/>
+    <fullyQualifiedTypeName name="tema05.EjerciciosBasicos.Ej07.Sociedad"/>
 </qualifiedTypeNameHistroy>

@@ -93,6 +93,13 @@ public class Sociedad {
 	}
 	
 	public void borrarGenero(String genero) {
+		throws ParametroIncorrectoException{
+			if (!genero.equalsIgnoreCase("H") && !genero.equalsIgnoreCase("M")) {
+				throw new ParametroIncorrectoException("El genero tiene que ser H o M");
+			}
+			Iterator<Persona> it = sociedad;
+		} while ;
+		
 		
 	}
  

@@ -1,0 +1,13 @@
+package tema06.Prueba.servicios;
+
+public class OpenConnection {
+	
+	public Connection getNewConnection() throws SQLException {
+		String usuario = "PROG";
+		String password = "ceu";
+
+		String driverClass = "oracle.jdbc.driver.OracleDriver";
+		String url = "jdbc:oracle:thin:@//172.16.39.200:1521/XE";
+	}
+
+}

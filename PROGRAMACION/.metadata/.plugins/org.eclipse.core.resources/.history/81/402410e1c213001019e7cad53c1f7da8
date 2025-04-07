@@ -1,0 +1,11 @@
+package tema06.Prueba.servicios;
+
+public class PersonasService {
+
+	private OpenConnection openConn;
+	
+	public PersonasService() {
+		openConn = new OpenConnection();
+	}
+	
+}
