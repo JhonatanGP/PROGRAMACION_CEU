@@ -10,3 +10,4 @@ INSERT INTO personas values('12345678','Jhonatan','Guzman','12/09/1998');
 INSERT INTO personas values('87654321','Antonio','Lopez','20/02/1995');
 commit;
 --commit; Para guardar los datos.
+select * from personas;
