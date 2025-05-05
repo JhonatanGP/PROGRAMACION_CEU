@@ -1,0 +1,142 @@
+package tema06.EjBasicos.Ej07.servicios;
+
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+import tema06.EjBasicos.Ej07.modelo.Persona;
+
+public class PersonasService {
+
+	private OpenConnection openConn;
+	
+	public PersonasService() {
+		openConn = new OpenConnection();
+		System.out.println("Conexión establecida.");
+	}
+	
+	public Persona consultarPersona(String dni) throws SQLException{
+		ResultSet rs = null;		
+		try (Connection conn = openConn.getNewConnection();
+				Statement stmt = conn.createStatement()){
+						
+			String sql = "SELECT * FROM PERSONAS WHERE DNI = '" + dni + "'";
+			System.out.println(sql);
+			rs = stmt.executeQuery(sql);
+			
+			if(rs.next()) {
+				Persona p = new Persona();
+				p.setNombre(rs.getString("NOMBRE"));
+				p.setDni(rs.getString("DNI"));
+				
+				String apellidos = rs.getString("APELLIDOS");
+				p.setApellidos(apellidos);
+				p.setFechaNac(rs.getDate("FECHA_NACIMIENTO").toLocalDate());
+				//return getPersonaFromResultSet(rs);		
+				return p;
+			}else {
+				return null;
+			}
+			
+		}finally {
+			System.out.println("");
+		}
+		
+	}
+	public List<Persona> buscarPersona(String cadena) throws SQLException{
+		List<Persona> lista = new ArrayList<>();
+		try (Connection conn = openConn.getNewConnection();
+				Statement stmt = conn.createStatement()){
+						
+			String sql = "SELECT * FROM PERSONAS WHERE NOMBRE LIKE '%" + cadena + "%' OR APELLIDOS LIKE '%" + cadena + "%'" ;
+			System.out.println(sql);
+			ResultSet rs = stmt.executeQuery(sql);
+				
+			while(rs.next()) {
+				Persona p = new Persona();
+				p.setNombre(rs.getString("NOMBRE"));
+				p.setDni(rs.getString("DNI"));
+				
+				String apellidos = rs.getString("APELLIDOS");
+				p.setApellidos(apellidos);
+				p.setFechaNac(rs.getDate("FECHA_NACIMIENTO").toLocalDate());
+				lista.add(p);	
+			}return lista;	
+		}
+		
+	}
+	public void insertarPersona(Persona p) throws SQLException{
+		String sql = "INSERT INTO PERSONAS VALUES (?, ?, ?, ?)";
+		try (Connection conn = openConn.getNewConnection(); 
+				PreparedStatement stmt = conn.prepareStatement(sql)) {
+
+			stmt.setString(1, p.getDni());
+			stmt.setString(2, p.getNombre());
+			stmt.setString(3, p.getApellidos());
+			stmt.setDate(4, Date.valueOf(p.getFechaNac()));
+
+			System.out.println(sql);
+			stmt.execute();
+		}
+	}
+	public void actualizarPersona(Persona p) throws SQLException{
+		String sql = "UPDATE PERSONAS SET NOMBRE = ?, APELLIDOS = ?, FECHA_NACIMIENTO = ? WHERE DNI = ?";
+		try (Connection conn = openConn.getNewConnection(); 
+				PreparedStatement stmt = conn.prepareStatement(sql)) {
+
+			stmt.setString(1, p.getNombre());
+			stmt.setString(2, p.getApellidos());
+			stmt.setDate(3, Date.valueOf(p.getFechaNac()));
+			stmt.setString(4, p.getDni());
+
+			System.out.println(sql);
+			stmt.executeUpdate();
+		}
+	}
+	public void borrarPersona(String dni) throws SQLException{
+		String sql = "DELETE FROM PERSONAS WHERE DNI = ?";
+		try (Connection conn = openConn.getNewConnection(); 
+				PreparedStatement stmt = conn.prepareStatement(sql)) {
+
+			stmt.setString(1, dni);
+			System.out.println(sql);
+			stmt.execute();
+		}
+	}
+	public void insertarPersonas(List<Persona> p) throws SQLException{
+		String sql = "INSERT INTO PERSONAS VALUES (?, ?, ?, ?)";
+		try (Connection conn = openConn.getNewConnection(); 
+				PreparedStatement stmt = conn.prepareStatement(sql)) {
+			conn.setAutoCommit(false);
+			try { 
+				// Aquí hacemos las operaciones
+				for (int i = 0; i < p.size(); i++) {
+					Persona p1 = new Persona();
+					stmt.setString(1, p1.getDni());
+					stmt.setString(2, p1.getNombre());
+					stmt.setString(3, p1.getApellidos());
+					stmt.setDate(4, Date.valueOf(p1.getFechaNac()));
+				}
+
+				System.out.println(sql);
+				stmt.execute();
+				//Cuando terminemos hacemos commit
+				conn.commit();
+			}
+			catch(SQLException e) {
+				// Si hay algún error hacemos rollback
+				conn.rollback();
+				throw e; // relanzamos la exception para capturarla más abajo
+			}			
+		}
+		catch(SQLException e) {
+			e.printStackTrace();
+			//throw new ErrorException("...", e);
+		}
+	}
+	
+}
