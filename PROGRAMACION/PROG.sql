@@ -11,3 +11,11 @@ INSERT INTO personas values('87654321','Antonio','Lopez','20/02/1995');
 commit;
 --commit; Para guardar los datos.
 select * from personas;
+--12/05/2025
+CREATE TABLE productos_gourmet (
+ id NUMBER PRIMARY KEY,
+ nombre VARCHAR2(100) NOT NULL,
+ tipo VARCHAR2(50) NOT NULL,
+ precio NUMBER(10,2) NOT NULL,
+ disponible NUMBER(1) NOT NULL
+);

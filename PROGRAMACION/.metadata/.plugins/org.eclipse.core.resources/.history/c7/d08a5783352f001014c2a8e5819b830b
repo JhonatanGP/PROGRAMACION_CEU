@@ -1,0 +1,16 @@
+package tema06.EjerciciosRepaso.Ej01.modelo;
+
+import java.math.BigDecimal;
+import java.time.LocalDate;
+
+public class Producto {
+	
+	private Integer id;
+	private String nombre;
+	private String tipo;
+	private BigDecimal precio;
+	private Boolean disponible;
+	
+	
+
+}
