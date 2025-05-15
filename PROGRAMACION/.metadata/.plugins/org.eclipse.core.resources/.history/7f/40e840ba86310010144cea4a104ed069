@@ -1,0 +1,76 @@
+package tema06.EjerciciosRepaso.Ej01.app;
+
+import java.math.BigDecimal;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import tema06.EjerciciosRepaso.Ej01.modelo.Producto;
+import tema06.EjerciciosRepaso.Ej01.servicios.ProductosService;
+
+public class App {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		List<Producto> lista = new ArrayList<>();
+		ProductosService ps = new ProductosService();
+		
+/*1. Solicita al usuario los datos de 3 productos. Insertarlos en BD de una única vez utilizando una lista. Si se 
+ * produce algún error, se debe de informar al usuario del motivo del mismo.*/
+		try {
+			while (lista.size() > 3) {
+				Producto p1 = new Producto();
+				System.out.println("Datos Productos");
+				System.out.print("Escribe el ID del Producto: ");
+				Integer id = scanner.nextInt();
+				System.out.println("Escribe el Nombre del Producto: ");
+				String nombre = scanner.nextLine();
+				System.out.println("Escrib el Tipo del Producto: ");
+				String tipo = scanner.nextLine();
+				System.out.println("Escribe un Precio del Producto: ");
+				BigDecimal precio = scanner.nextBigDecimal();
+				System.out.println("Escribe si es disponible");
+				Boolean disp = scanner.nextBoolean();
+				p1.setId(id);
+				p1.setNombre(nombre);
+				p1.setDisponible(disp);
+				p1.setPrecio(precio);
+				p1.setTipo(tipo);
+				lista.add(p1);
+			}
+			ps.insertarProductos(lista);
+		} catch (SQLException e) {
+			System.err.println("ERROR | Ingresando los Datos del Producto. ");
+		}
+		
+		
+/*2. Solicitar al usuario un tipo de producto y consultar todos los productos de dicho tipo. Mostrarlos de forma: 
+ * Nombre Producto – tipo – precio €. El precio debe estar redondeados a 2 decimales con HALF_DOWN. Calcular y
+ *  mostrar la suma de todos los productos de dicho tipo.
+	Ejemplo:
+	*** PRODUCTOS DE TIPO ‘EMBUTIDO’ ***
+	Jamón Ibérico - Embutido - 120.05 €
+	Chorizo Artesanal Picante - Embutido – 9.75 €
+	Salchichón de Vic - Embutido - 11.40 €
+	TOTAL DE PRODUCTOS DE TIPO ‘EMBUTIDO’: 141.20 € */
+		
+		
+		
+/*3. Mostrar el producto disponible más caro. Utilizar el método consultarProductosDisponibles(). */
+		
+		
+		
+/*4. Escribir por pantalla el producto disponible con id 5 utilizando el método consultarProductosDisponibles(). 
+ * Si no existe, mostrar un mensaje indicándolo. */
+		
+		
+		
+/*5. Solicitar al usuario el id de un producto y eliminarlo de la BD. Si se produce algún error, se debe de informar 
+ * al usuario del motivo del mismo. */
+		
+		
+		
+	}
+
+}

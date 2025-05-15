@@ -1,0 +1,39 @@
+package tema06.EjerciciosRepaso.Ej01.app;
+
+public class App {
+
+	public static void main(String[] args) {
+/*1. Solicita al usuario los datos de 3 productos. Insertarlos en BD de una única vez utilizando una lista. Si se 
+ * produce algún error, se debe de informar al usuario del motivo del mismo.*/
+		
+		
+		
+/*2. Solicitar al usuario un tipo de producto y consultar todos los productos de dicho tipo. Mostrarlos de forma: 
+ * Nombre Producto – tipo – precio €. El precio debe estar redondeados a 2 decimales con HALF_DOWN. Calcular y
+ *  mostrar la suma de todos los productos de dicho tipo.
+	Ejemplo:
+	*** PRODUCTOS DE TIPO ‘EMBUTIDO’ ***
+	Jamón Ibérico - Embutido - 120.05 €
+	Chorizo Artesanal Picante - Embutido – 9.75 €
+	Salchichón de Vic - Embutido - 11.40 €
+	TOTAL DE PRODUCTOS DE TIPO ‘EMBUTIDO’: 141.20 € */
+		
+		
+		
+/*3. Mostrar el producto disponible más caro. Utilizar el método consultarProductosDisponibles(). */
+		
+		
+		
+/*4. Escribir por pantalla el producto disponible con id 5 utilizando el método consultarProductosDisponibles(). 
+ * Si no existe, mostrar un mensaje indicándolo. */
+		
+		
+		
+/*5. Solicitar al usuario el id de un producto y eliminarlo de la BD. Si se produce algún error, se debe de informar 
+ * al usuario del motivo del mismo. */
+		
+		
+		
+	}
+
+}

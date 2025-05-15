@@ -127,7 +127,7 @@ negativo o cero, se deberá lanzar la  excepción ProductoInvalidoException. */
 	
 /*4. eliminaProducto(): Elimina un producto por su id. Si el producto no está en BD, lanzar la excepción 
  * ProductoNoEncontradoException. */
-	public void eliminaProducto(int id) throws SQLException,ProductoNoEncontradoException{
+	public void eliminaProducto(int id) throws SQLException, ProductoNoEncontradoException{
 		String sql = "DELETE FROM productos_gourmet WHERE id = ?";
 		try (Connection conn = openConn.getNewConnection(); PreparedStatement stmt = conn.prepareStatement(sql)){
 			stmt.setInt(1, id);
@@ -142,7 +142,7 @@ negativo o cero, se deberá lanzar la  excepción ProductoInvalidoException. */
  * es el id del producto y el valor, el propio producto. */
 	public Map<Integer, Producto> consultarProductosDisponibles() throws SQLException {
 		Map<Integer, Producto> mapa = new HashMap<>();
-		String sql = "DELETE * FROM productos_gourmet WHERE disponible = 1";
+		String sql = "SELECT * FROM productos_gourmet WHERE disponible = 1";
 		
 		try (Connection conn = openConn.getNewConnection(); PreparedStatement stmt = conn.prepareStatement(sql)){
 			ResultSet rs = stmt.executeQuery();
@@ -157,9 +157,6 @@ negativo o cero, se deberá lanzar la  excepción ProductoInvalidoException. */
 				mapa.put(p.getId(),p);
 			}
 			
-		}
-		if (mapa.isEmpty()) {
-			throw new ProductoNoEncontradoException("No se encontraron productos del tipo: " + tipo);
 		}
 		return mapa;
 	}
