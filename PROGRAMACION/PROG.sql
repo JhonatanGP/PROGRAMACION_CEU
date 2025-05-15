@@ -19,3 +19,12 @@ CREATE TABLE productos_gourmet (
  precio NUMBER(10,2) NOT NULL,
  disponible NUMBER(1) NOT NULL
 );
+
+-- 15/05/2025
+CREATE TABLE libros (
+ ISBN varchar2(50) NOT NULL,
+ TITULO varchar2(50) NOT NULL,
+ AUTOR varchar2(50) NOT NULL,
+ PRECIO NUMERIC(20,6) NOT NULL,
+ PRIMARY KEY (ISBN)
+); 
