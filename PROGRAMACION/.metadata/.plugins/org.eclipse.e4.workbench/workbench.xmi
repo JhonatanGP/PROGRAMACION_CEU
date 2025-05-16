@@ -108,7 +108,7 @@
                 </children>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_cQCZrv0VEe-LrqjX2_Ebzg" containerData="8575" selectedElement="_cQDAuf0VEe-LrqjX2_Ebzg">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_cQCZrv0VEe-LrqjX2_Ebzg" containerData="8575" selectedElement="_cQCZr_0VEe-LrqjX2_Ebzg">
               <children xsi:type="basic:PartSashContainer" xmi:id="_cQCZr_0VEe-LrqjX2_Ebzg" containerData="6624" selectedElement="_cQCZsP0VEe-LrqjX2_Ebzg" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_cQCZsP0VEe-LrqjX2_Ebzg" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_cQDn6P0VEe-LrqjX2_Ebzg"/>
                 <children xsi:type="basic:PartSashContainer" xmi:id="_cQDAsP0VEe-LrqjX2_Ebzg" toBeRendered="false" containerData="2500">
@@ -251,7 +251,7 @@
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_v3iYoDGiEfC1lrfEX3Xx4A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="App.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;App.java&quot; partName=&quot;App.java&quot; title=&quot;App.java&quot; tooltip=&quot;Repaso/src/app/App.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Repaso/src/app/App.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1574&quot; selectionTopPixel=&quot;619&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;App.java&quot; partName=&quot;App.java&quot; title=&quot;App.java&quot; tooltip=&quot;Repaso/src/app/App.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Repaso/src/app/App.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1636&quot; selectionTopPixel=&quot;435&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
@@ -411,7 +411,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_cQDo0_0VEe-LrqjX2_Ebzg" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_cqnHMDGWEfC1lrfEX3Xx4A" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_cQGE0v0VEe-LrqjX2_Ebzg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_AhAgsDJxEfCSKK3fih9Tuw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_cQGE0v0VEe-LrqjX2_Ebzg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_cQDo4P0VEe-LrqjX2_Ebzg" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -419,8 +419,8 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_cQDo4v0VEe-LrqjX2_Ebzg" elementId="org.eclipse.ui.workbench.edit">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_cqnuRDGWEfC1lrfEX3Xx4A" elementId="undo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/undo_edit.png" tooltip="Undo" command="_cQFeQP0VEe-LrqjX2_Ebzg"/>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_cqoVUDGWEfC1lrfEX3Xx4A" elementId="redo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/redo_edit.png" tooltip="Redo" enabled="false" command="_cQFeuv0VEe-LrqjX2_Ebzg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_AhBHwDJxEfCSKK3fih9Tuw" elementId="undo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/undo_edit.png" tooltip="Undo" enabled="false" command="_cQFeQP0VEe-LrqjX2_Ebzg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_AhBHwTJxEfCSKK3fih9Tuw" elementId="redo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/redo_edit.png" tooltip="Redo" enabled="false" command="_cQFeuv0VEe-LrqjX2_Ebzg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_cQDo5v0VEe-LrqjX2_Ebzg" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -444,7 +444,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_cQDpHf0VEe-LrqjX2_Ebzg" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_cqoVVjGWEfC1lrfEX3Xx4A" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_cQGEjf0VEe-LrqjX2_Ebzg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_AhCV4DJxEfCSKK3fih9Tuw" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_cQGEjf0VEe-LrqjX2_Ebzg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_cQDpKf0VEe-LrqjX2_Ebzg" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -772,6 +772,7 @@
     <bindings xmi:id="__FcIlzGMEfCuHtgaaqmxLQ" keySequence="ALT+SHIFT+D X" command="_cQGGOf0VEe-LrqjX2_Ebzg"/>
     <bindings xmi:id="__FcImDGMEfCuHtgaaqmxLQ" keySequence="ALT+SHIFT+D O" command="_cQGGRv0VEe-LrqjX2_Ebzg"/>
     <bindings xmi:id="__FcImTGMEfCuHtgaaqmxLQ" keySequence="ALT+SHIFT+D P" command="_cQGGiP0VEe-LrqjX2_Ebzg"/>
+    <bindings xmi:id="_ATBIADJxEfCSKK3fih9Tuw" keySequence="ALT+CTRL+SHIFT+S" command="_ASuNEzJxEfCSKK3fih9Tuw"/>
   </bindingTables>
   <bindingTables xmi:id="_cQDqOP0VEe-LrqjX2_Ebzg" elementId="org.eclipse.jdt.ui.javaEditorScope" bindingContext="_cQDq-P0VEe-LrqjX2_Ebzg">
     <bindings xmi:id="_cQDqOf0VEe-LrqjX2_Ebzg" keySequence="CTRL+SHIFT+P" command="_cQGEbf0VEe-LrqjX2_Ebzg"/>
@@ -3035,6 +3036,9 @@
   <commands xmi:id="_cQGG5P0VEe-LrqjX2_Ebzg" elementId="AUTOGEN:::org.eclipse.wst.xsd.core.xsdsource.ruler.actions/org.eclipse.ui.texteditor.SelectRulerAction" commandName="Select Ruler" category="_cQGHGf0VEe-LrqjX2_Ebzg"/>
   <commands xmi:id="_cQGG5f0VEe-LrqjX2_Ebzg" elementId="AUTOGEN:::org.eclipse.pde.ui.logViewActions/org.eclipse.jdt.debug.ui.LogViewActions.showStackTrace" commandName="Show Stack Trace in Console View" description="Show Stack Trace in Console View" category="_cQGHGf0VEe-LrqjX2_Ebzg"/>
   <commands xmi:id="_cQGG5v0VEe-LrqjX2_Ebzg" elementId="AUTOGEN:::org.eclipse.ui.articles.action.contribution.view/org.eclipse.wst.wsi.ui.internal.actions.actionDelegates.ValidateWSIProfileActionDelegate" commandName="WS-I Profile Validator" description="Validate WS-I Message Log File" category="_cQGHGf0VEe-LrqjX2_Ebzg"/>
+  <commands xmi:id="_ASuNEjJxEfCSKK3fih9Tuw" elementId="com.laboki.eclipse.plugin.smartsave.command.enableSmartSave" commandName="Enable Smart Save" description="Enable smart save" category="_ASuNETJxEfCSKK3fih9Tuw"/>
+  <commands xmi:id="_ASuNEzJxEfCSKK3fih9Tuw" elementId="com.laboki.eclipse.plugin.smartsave.command.toggleSmartSave" commandName="Toggle Smart Save" description="Enable or disable smart save." category="_ASuNETJxEfCSKK3fih9Tuw"/>
+  <commands xmi:id="_ASuNFDJxEfCSKK3fih9Tuw" elementId="com.laboki.eclipse.plugin.smartsave.command.disableSmartSave" commandName="Disable Smart Save" description="Disable smart save" category="_ASuNETJxEfCSKK3fih9Tuw"/>
   <addons xmi:id="_cQGG5_0VEe-LrqjX2_Ebzg" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_cQGG6P0VEe-LrqjX2_Ebzg" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_cQGG6f0VEe-LrqjX2_Ebzg" elementId="org.eclipse.e4.ui.bindings.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
@@ -3102,4 +3106,5 @@
   <categories xmi:id="_cQGHJ_0VEe-LrqjX2_Ebzg" elementId="org.eclipse.datatools.sqltools.sqleditor.category" name="Database Tools" description="Database Development tools"/>
   <categories xmi:id="_cQGHKP0VEe-LrqjX2_Ebzg" elementId="org.eclipse.gef.category.view" name="View" description="View"/>
   <categories xmi:id="_cQGHKf0VEe-LrqjX2_Ebzg" elementId="org.eclipse.pde.runtime.spy.commands.category" name="Spy"/>
+  <categories xmi:id="_ASuNETJxEfCSKK3fih9Tuw" elementId="com.laboki.eclipse.plugin.smartsave.category.commands" name="Smart Save" description="Enable or disable smart save."/>
 </application:Application>
