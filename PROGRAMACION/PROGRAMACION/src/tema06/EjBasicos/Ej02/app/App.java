@@ -27,7 +27,8 @@ public class App {
 				System.out.println("Indica nombre o apellidos a buscar:");
 				String filtro = "";
 				do {
-					filtro = sc.nextLine();
+					filtro = sc.nextLine().trim();
+					//System.out.println("Intente de nuevo");
 				} while (filtro.isEmpty());
 
 				List<Persona> lista = service.buscarPersona(filtro);

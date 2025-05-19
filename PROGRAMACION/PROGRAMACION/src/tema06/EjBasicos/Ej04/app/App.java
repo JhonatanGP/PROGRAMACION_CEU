@@ -7,6 +7,7 @@ import java.time.format.DateTimeParseException;
 import java.util.List;
 import java.util.Scanner;
 import tema06.EjBasicos.Ej04.modelo.Persona;
+import tema06.EjBasicos.Ej04.servicios.DatosIncompletosException;
 import tema06.EjBasicos.Ej04.servicios.PersonasService;
 
 public class App {
@@ -25,16 +26,16 @@ public class App {
 				if (num == 1 || num == 2 || num == 3 || num == 0) {
 
 				} else {
-					System.out.println("Número incorrecto");
+					System.out.println("Número incorrecto.");
 				}
 				if (num == 1) {
 					sc.nextLine();
-					System.out.println("Indica el DNI de la persona");
+					System.out.println("Indica el DNI de la persona:");
 					String vDNI = sc.nextLine();
 					Persona p = service.consultarPersona(vDNI);
 
 					if (p == null) {
-						System.out.println("No existe persona con los datos introducidos");
+						System.out.println("No existe persona con los datos introducidos.");
 					} else {
 						System.out.println(p);
 					}
@@ -48,34 +49,54 @@ public class App {
 
 					List<Persona> lista = service.buscarPersona(filtro);
 					if (lista.isEmpty())
-						System.out.println("No hay ninguna persona con ese filtro");
+						System.out.println("No hay ninguna persona con ese filtro.");
 					for (Persona persona : lista) {
 						System.out.println(persona);
 					}
 				}
 				if (num == 3) {
+					Boolean error = false;
+					System.out.println("Insertar.");
 					Persona agregar = new Persona();
-					System.out.println("Escribe un DNI: ");
-					sc.nextLine();
+					
+					do {
+						System.out.println("Escribe un DNI: ");
+						sc.nextLine();
 
-					String dni = sc.nextLine();
-					System.out.println("Escribe un Nombre:");
-					String nombre = sc.nextLine();
-					System.out.println("Escribe un Apellidos:");
-					String apellido = sc.nextLine();
-					System.out.println("Escribe una Fecha de Nacimiento:");
-					String fecha = sc.nextLine();
-					agregar.setApellidos(apellido);
-					agregar.setDni(dni);
-					agregar.setNombre(nombre);
-					DateTimeFormatter format = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-					try {
-						LocalDate fecha1 = LocalDate.parse(fecha, format);
-						agregar.setFechaNac(fecha1);
-					} catch (DateTimeParseException e) {
-						System.out.println("La fecha indicada no es la correcta");
-					}
+						String dni = sc.nextLine();
+						System.out.println("Escribe un Nombre:");
+						String nombre = sc.nextLine();
+						System.out.println("Escribe un Apellidos:");
+						String apellido = sc.nextLine();
+						System.out.println("Escribe una Fecha de Nacimiento:");
+						String fecha = sc.nextLine();
+						agregar.setApellidos(apellido);
+						agregar.setDni(dni);
+						agregar.setNombre(nombre);
+						DateTimeFormatter format = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+						try {
+							LocalDate fecha1 = LocalDate.parse(fecha, format);
+							agregar.setFechaNac(fecha1);
+						} catch (DateTimeParseException e) {
+							System.out.println("La fecha indicada no es la correcta");
+							error = true;
+						}if (!error) {
+							
+							try {
+								agregar.validar();
+							}catch(DatosIncompletosException e) {
+								System.out.println("Datos incompletos.");
+								error =  true;
+							}
+						}
+						
+						
+					}while (error);
 					service.insertarPersona(agregar);
+					System.out.println("Insertado correctamente.");
+					
+					
+					
 					
 				}
 				if (num == 0) {

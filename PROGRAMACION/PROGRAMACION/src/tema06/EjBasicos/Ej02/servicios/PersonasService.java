@@ -48,9 +48,11 @@ public class PersonasService {
 		
 	}
 	public List<Persona> buscarPersona(String filtro) throws SQLException{
+		
 		List<Persona> lista = new ArrayList<>();
 		String sql = "SELECT * FROM PERSONAS WHERE NOMBRE LIKE '%" + filtro + "%' OR APELLIDOS LIKE '%" + filtro + "%'" ;
 		System.out.println(sql);
+		
 		try (Connection conn = openConn.getNewConnection();
 				Statement stmt = conn.createStatement()){
 			ResultSet rs = stmt.executeQuery(sql);
