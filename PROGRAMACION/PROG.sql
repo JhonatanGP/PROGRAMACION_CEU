@@ -1,3 +1,4 @@
+drop table personas cascade constraints;
 CREATE TABLE personas (
  DNI varchar2(50) NOT NULL,
  NOMBRE varchar2(50) NOT NULL,
@@ -12,6 +13,7 @@ commit;
 --commit; Para guardar los datos.
 select * from personas;
 --12/05/2025
+drop table personas cascade constraints;
 CREATE TABLE productos_gourmet (
  id NUMBER PRIMARY KEY,
  nombre VARCHAR2(100) NOT NULL,
@@ -21,6 +23,7 @@ CREATE TABLE productos_gourmet (
 );
 
 -- 15/05/2025
+drop table personas cascade constraints;
 CREATE TABLE libros (
  ISBN varchar2(50) NOT NULL,
  TITULO varchar2(50) NOT NULL,
@@ -28,3 +31,6 @@ CREATE TABLE libros (
  PRECIO NUMERIC(20,6) NOT NULL,
  PRIMARY KEY (ISBN)
 ); 
+
+drop table reservas cascade constraints;
+drop table trasteros cascade constraints;
